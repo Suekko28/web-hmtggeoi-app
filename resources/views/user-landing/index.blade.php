@@ -79,10 +79,24 @@
     </div>
     <!-- Carousel End -->
 
-    <!-- Visi & Misi -->
+    <!-- Sejarah HMTGGEOI -->
     <div class="container mx-auto mt-32 lg:px-32 sm:px-6">
         <div class="title">
-            <h1 class="font-bold text-center text-3xl text-orange-primary">HMTGGEOI</h1>
+            <h1 class="text-orange-primary font-extrabold text-3xl">Sejarah HMTG "GEOI"</h1>
+        </div>
+        <div class="description leading-8">
+            <p class="text-gray-600">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione vel doloribus illo
+                iusto ea error. Corrupti
+                iusto obcaecati perferendis, eaque doloremque dicta? Reprehenderit facere dolore culpa ullam porro molestias
+                voluptatem. </p>
+        </div>
+    </div>
+    <!-- Sejarah HMTGGEOI End -->
+
+    <!-- Visi & Misi -->
+    <div class="container mx-auto mt-32 px-32 sm:px-6 lg:px-32 ">
+        <div class="title">
+            <h1 class="font-extrabold text-center text-3xl text-orange-primary">HMTGGEOI</h1>
         </div>
         <!-- VISI -->
         <div class="flex flex-row lg:flex-nowrap sm:flex-wrap gap-12 mt-12 content">
@@ -91,10 +105,9 @@
             </div>
             <div class="w-full">
                 <h1 class="font-bold text-2xl mb-4"><i class="fa-solid fa-quote-left"></i> Visi</h1>
-                <p class="italic text-xl text-gray-600">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet rem inventore at
-                    maiores dolorem quo, veniam quasi delectus? Quam, ut soluta. Odit voluptatibus dolorum
-                    ad doloribus nisi voluptate, placeat quas?
+                <p class=" text-base text-gray-600 leading-8">
+                    Himpunan Mahasiswa Teknik Geologi "GEOI" Organisasi Mahasiswa yang adaptif dalam memberikan
+                    kebermanfaatan bagi Anggota HMTG "GEOI", Universitas Pakuan, dan masyarakat di sekitarnya.
                 </p>
             </div>
         </div>
@@ -105,22 +118,51 @@
                 <img src="{{ asset('/images/visual-1.png') }}" alt="" class="w-full shadow-md object-cover h-full">
             </div>
             <div class="w-full">
-                <h1 class="font-bold text-2xl mb-4">Misi <i class="fa-solid fa-quote-right"></i></h1>
-                <p class="italic text-xl text-gray-600">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet rem inventore at
-                    maiores dolorem quo, veniam quasi delectus? Quam, ut soluta. Odit voluptatibus dolorum
-                    ad doloribus nisi voluptate, placeat quas?
+                <h1 class="font-bold text-2xl mb-4"><i class="fa-solid fa-quote-left"></i> Misi</h1>
+                <p class="text-base text-gray-600 leading-8">
+                    1. Membangun lingkungan internal yang solid dan apresiatif sebagai upaya meningkatkan peran serta fungsi
+                    sumber daya organisasi. <br> <br>
+                    2. Menjadikan HMTG "GEOI" sebagai wadah yang nyaman dan harmonis bagi anggota untuk berkembang dan
+                    berkarya dalam suasana kekeluargaan. <br> <br>
+                    3. Menjalin relasi yang berkelanjutan dengan seluruh elemen demi mewujudkan HMTG "GEOI" yang sinergis.
                 </p>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Program Kerja -->
+    <div class="container mx-auto mt-32 lg:px-32 sm:px-6">
+        <div class="title">
+            <h1 class="text-orange-primary font-extrabold text-3xl text-center">Program Kerja</h1>
+        </div>
+
+        <div class="flex flex-wrap justify-center items-center gap-6">
+
+            <div class="p-6 bg-blue-200 max-w-xl md:max-w-lg w-full">
+                <h1>Test</h1>
+            </div>
+            <div class="p-6 bg-blue-200 max-w-xl md:max-w-lg w-full">
+                <h1>Test</h1>
+            </div>
+            <div class="p-6 bg-blue-200 max-w-xl  md:max-w-lg w-full">
+                <h1>Test</h1>
+            </div>
+            <div class="p-6 bg-blue-200 max-w-xl  md:max-w-lg w-full">
+                <h1>Test</h1>
+
             </div>
         </div>
 
     </div>
 
+    <!-- Program Kerja End -->
 
+    <!-- GEOI Store -->
     <div class="container mx-auto mt-32 lg:px-32 sm:px-6">
         <div class="title mb-12">
-            <h1 class="font-bold text-3xl text-orange-primary">GEOI Store</h1>
-            <hr class="w-52 border-t-4 rounded">
+            <h1 class="font-extrabold text-3xl text-orange-primary">GEOI Store</h1>
+            <hr class="w-48 border-t-4 rounded">
         </div>
         <div class="content p-5 bg-orange-50 rounded-xl">
             <div class="flex md:flex-nowrap sm:flex-wrap gap-6 content">
@@ -140,8 +182,7 @@
                 <div class="overflow-x-auto scroll-container scroll-smooth snap-x snap-mandatory">
                     <div class="flex gap-4 w-max px-4">
                         <!-- Ulangi card di bawah ini sesuai kebutuhan -->
-                        <div
-                            class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 shrink-0">
+                        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md shrink-0">
                             <a href="#">
                                 <img class="rounded-t-lg" src="{{ asset('/images/visual-1.png') }}" alt="" />
                             </a>
@@ -151,6 +192,36 @@
                                         Noteworthy technology acquisitions 2021
                                     </h5>
                                 </a>
+                                <div class="flex flex-row mb-2">
+                                    <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                        <path
+                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                    </svg>
+                                    <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                        <path
+                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                    </svg>
+                                    <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                        <path
+                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                    </svg>
+                                    <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                        <path
+                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                    </svg>
+                                    <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                        <path
+                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                    </svg>
+                                    <span
+                                        class="bg-orange-100 text-orange-primary text-xs font-semibold px-2.5 py-0.5 rounded-sm dark:bg-blue-200 dark:text-blue-800 ms-3">5.0</span>
+
+                                </div>
                                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
                                     Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse
                                     chronological order.
@@ -166,8 +237,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div
-                            class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 shrink-0">
+                        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md shrink-0">
                             <a href="#">
                                 <img class="rounded-t-lg" src="{{ asset('/images/visual-1.png') }}" alt="" />
                             </a>
@@ -177,6 +247,36 @@
                                         Noteworthy technology acquisitions 2021
                                     </h5>
                                 </a>
+                                <div class="flex flex-row mb-2">
+                                    <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                        <path
+                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                    </svg>
+                                    <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                        <path
+                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                    </svg>
+                                    <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                        <path
+                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                    </svg>
+                                    <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                        <path
+                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                    </svg>
+                                    <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                        <path
+                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                    </svg>
+                                    <span
+                                        class="bg-orange-100 text-orange-primary text-xs font-semibold px-2.5 py-0.5 rounded-sm dark:bg-blue-200 dark:text-blue-800 ms-3">5.0</span>
+
+                                </div>
                                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
                                     Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse
                                     chronological order.
@@ -192,8 +292,8 @@
                                 </a>
                             </div>
                         </div>
-                        <div
-                            class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 shrink-0">
+
+                        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md shrink-0">
                             <a href="#">
                                 <img class="rounded-t-lg" src="{{ asset('/images/visual-1.png') }}" alt="" />
                             </a>
@@ -203,6 +303,36 @@
                                         Noteworthy technology acquisitions 2021
                                     </h5>
                                 </a>
+                                <div class="flex flex-row mb-2">
+                                    <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                        <path
+                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                    </svg>
+                                    <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                        <path
+                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                    </svg>
+                                    <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                        <path
+                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                    </svg>
+                                    <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                        <path
+                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                    </svg>
+                                    <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                        <path
+                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                    </svg>
+                                    <span
+                                        class="bg-orange-100 text-orange-primary text-xs font-semibold px-2.5 py-0.5 rounded-sm dark:bg-blue-200 dark:text-blue-800 ms-3">5.0</span>
+
+                                </div>
                                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
                                     Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse
                                     chronological order.
@@ -218,8 +348,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div
-                            class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 shrink-0">
+                        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md shrink-0">
                             <a href="#">
                                 <img class="rounded-t-lg" src="{{ asset('/images/visual-1.png') }}" alt="" />
                             </a>
@@ -229,6 +358,36 @@
                                         Noteworthy technology acquisitions 2021
                                     </h5>
                                 </a>
+                                <div class="flex flex-row mb-2">
+                                    <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                        <path
+                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                    </svg>
+                                    <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                        <path
+                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                    </svg>
+                                    <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                        <path
+                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                    </svg>
+                                    <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                        <path
+                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                    </svg>
+                                    <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                        <path
+                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                    </svg>
+                                    <span
+                                        class="bg-orange-100 text-orange-primary text-xs font-semibold px-2.5 py-0.5 rounded-sm dark:bg-blue-200 dark:text-blue-800 ms-3">5.0</span>
+
+                                </div>
                                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
                                     Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse
                                     chronological order.
@@ -244,38 +403,14 @@
                                 </a>
                             </div>
                         </div>
-                        <div
-                            class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 shrink-0">
-                            <a href="#">
-                                <img class="rounded-t-lg" src="{{ asset('/images/visual-1.png') }}" alt="" />
-                            </a>
-                            <div class="p-5">
-                                <a href="#">
-                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                        Noteworthy technology acquisitions 2021
-                                    </h5>
-                                </a>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                                    Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse
-                                    chronological order.
-                                </p>
-                                <a href="#"
-                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-orange-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-orange-primary dark:focus:ring-blue-800">
-                                    Beli Sekarang
-                                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- Tambahkan kartu lainnya di sini -->
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- GEOI Store End -->
+
 
     @include('layouts.footer')
 

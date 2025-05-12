@@ -15,10 +15,10 @@
             <div class="flex lg:order-2 items-center space-x-2 rounded-lg">
                 <!-- Social Media Icons (visible only on sm and above) -->
                 <div id="socialIcons" class="hidden sm:flex flex-row gap-6 py-2 px-6 items-center rounded-md">
-                    <img class="w-6 h-6 object-contain" src="{{ asset('/images/logo-instagram.png') }}" alt="Instagram">
-                    <img class="w-6 h-6 object-contain" src="{{ asset('/images/logo-youtube.png') }}" alt="YouTube">
-                    <img class="w-6 h-6 object-contain" src="{{ asset('/images/logo-email.png') }}" alt="Email">
-                    {{-- <img class="w-6 h-6 object-contain" src="{{ asset('/images/logo-search.png') }}" alt="Search"> --}}
+                    <img class="w-5 h-5 object-contain" src="{{ asset('/images/logo-instagram.png') }}" alt="Instagram">
+                    <img class="w-5 h-5 object-contain" src="{{ asset('/images/logo-youtube.png') }}" alt="YouTube">
+                    <img class="w-5 h-5 object-contain" src="{{ asset('/images/logo-email.png') }}" alt="Email">
+                    {{-- <img class="w-5 h-5 object-contain" src="{{ asset('/images/logo-search.png') }}" alt="Search"> --}}
                 </div>
 
                 <!-- Hamburger Button -->
@@ -95,10 +95,10 @@
 
                 <!-- Social Media Icons for Mobile (will be colored on scroll) -->
                 <div id="mobileSocialIcons" class="flex flex-row gap-4 mt-4 sm:hidden justify-center rounded-md p-2">
-                    <img class="w-6 h-6 object-contain" src="{{ asset('/images/logo-instagram.png') }}" alt="Instagram">
-                    <img class="w-6 h-6 object-contain" src="{{ asset('/images/logo-youtube.png') }}" alt="YouTube">
-                    <img class="w-6 h-6 object-contain" src="{{ asset('/images/logo-email.png') }}" alt="Email">
-                    {{-- <img class="w-6 h-6 object-contain" src="{{ asset('/images/logo-search.png') }}" alt="Search"> --}}
+                    <img class="w-5 h-5 object-contain" src="{{ asset('/images/logo-instagram.png') }}" alt="Instagram">
+                    <img class="w-5 h-5 object-contain" src="{{ asset('/images/logo-youtube.png') }}" alt="YouTube">
+                    <img class="w-5 h-5 object-contain" src="{{ asset('/images/logo-email.png') }}" alt="Email">
+                    {{-- <img class="w-5 h-5 object-contain" src="{{ asset('/images/logo-search.png') }}" alt="Search"> --}}
                 </div>
             </div>
         </div>

@@ -2,11 +2,12 @@
     <div class="mx-auto w-full p-4 py-6 lg:py-8">
         <div class="md:flex md:flex-nowrap sm:flex-wrap gap-24">
             <div class="mb-6 md:mb-0 md:w-1/2 sm:w-full">
-                <div class="flex items-center md:flex-wrap lg:flex-nowrap justify-center space-x-3">
+                <div class="flex flex-col items-center md:flex-wrap lg:flex-nowrap justify-center gap-3">
                     <img src="{{ asset('/images/logo-hmtggeoi.png') }}" class="h-32 w-32 object-cover"
                         alt="HMTGGEOI Logo" />
-                    <div class="flex text-white hidden sm:block lg:text-left md:text-center w-full">
+                    <div class="flex text-white hidden sm:block md:text-center w-full space-y-3">
                         <span class="text-2xl font-bold whitespace-nowrap">HMTGGEOI</span>
+                        <h6 class="font-bold">Himpunan Mahasiswa Teknik Geologi</h6>
                         <p class="font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut expedita
                             atque vel mollitia
                             placeat in animi dolore excepturi, dolores ipsam, molestiae quisquam! Iusto magni eius
