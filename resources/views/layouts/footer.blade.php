@@ -59,14 +59,16 @@
                 </div>
                 <div>
                     <h2 class="mb-6 text-sm font-semibold uppercase text-orange-primary">Contact</h2>
-                    <ul class="text-white dark:text-gray-400 font-medium">
-                        <li class="mb-4 sm:block hidden">
-                            <a href="https://tailwindcss.com/" class="hover:underline">hmtggeoi@gmail.com</a>
-                        </li>
-                        <li>
-                            <img class="w-6 h-6 object-contain lg:block hidden" src="{{ asset('/images/logo-email.png') }}"
-                                alt="Email">
-                        </li>
+                    <ul class="text-white font-medium">
+                        <div class="flex flex-row gap-2">
+                            <li>
+                                <img class="w-6 h-6 object-contain sm:inline"
+                                    src="{{ asset('/images/logo-email.png') }}" alt="Email">
+                            </li>
+                            <li class="sm:block hidden">
+                                <a href="mailto:hmtggeoi@gmail.com" class="hover:underline">hmtggeoi@gmail.com</a>
+                            </li>
+                        </div>
                     </ul>
                 </div>
                 <div>
@@ -100,8 +102,8 @@
         </div>
         <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div class="text-center">
-            <span class="text-sm text-white sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/"
-                    class="hover:underline">Flowbite™</a>. All Rights Reserved.</span>\
+            <span class="text-sm text-white sm:text-center dark:text-gray-400">© 2025 <a href="#"
+                    class="hover:text-orange-primary">HMTGGEOI</a> | Suekko Development.</span>\
         </div>
     </div>
 </footer>

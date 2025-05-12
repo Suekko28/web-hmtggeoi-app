@@ -90,7 +90,7 @@
                 <img src="{{ asset('/images/visual-1.png') }}" alt="" class="w-full shadow-md object-cover h-full">
             </div>
             <div class="w-full">
-                <h1 class="font-bold text-2xl mb-4">Visi</h1>
+                <h1 class="font-bold text-2xl mb-4"><i class="fa-solid fa-quote-left"></i> Visi</h1>
                 <p class="italic text-xl text-gray-600">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet rem inventore at
                     maiores dolorem quo, veniam quasi delectus? Quam, ut soluta. Odit voluptatibus dolorum
@@ -105,7 +105,7 @@
                 <img src="{{ asset('/images/visual-1.png') }}" alt="" class="w-full shadow-md object-cover h-full">
             </div>
             <div class="w-full">
-                <h1 class="font-bold text-2xl mb-4">Misi</h1>
+                <h1 class="font-bold text-2xl mb-4">Misi <i class="fa-solid fa-quote-right"></i></h1>
                 <p class="italic text-xl text-gray-600">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet rem inventore at
                     maiores dolorem quo, veniam quasi delectus? Quam, ut soluta. Odit voluptatibus dolorum
@@ -120,7 +120,7 @@
     <div class="container mx-auto mt-32 lg:px-32 sm:px-6">
         <div class="title mb-12">
             <h1 class="font-bold text-3xl text-orange-primary">GEOI Store</h1>
-            <hr class="w-48 border-t-3 rounded">
+            <hr class="w-52 border-t-4 rounded">
         </div>
         <div class="content p-5 bg-orange-50 rounded-xl">
             <div class="flex md:flex-nowrap sm:flex-wrap gap-6 content">
