@@ -67,7 +67,7 @@
                                 </li>
                                 <li>
                                     <a href="#"
-                                        class="block px-4 py-2 hover:bg-gray-100 hover:text-orange-primary dark:hover:bg-gray-600 dark:hover:text-white">Orientering
+                                        class="block px-4 py-2 hover:bg-gray-100 hover:text-orange-primary dark:hover:bg-gray-600 dark:hover:text-white">Orienteering
                                         Nasional</a>
                                 </li>
                                 <li>
@@ -78,7 +78,7 @@
                                 <li>
                                     <a href="#"
                                         class="block px-4 py-2 hover:bg-gray-100 hover:text-orange-primary dark:hover:bg-gray-600 dark:hover:text-white">HUT
-                                        HMTG"GEOI"</a>
+                                        HMTG "GEOI"</a>
                                 </li>
                             </ul>
                         </div>

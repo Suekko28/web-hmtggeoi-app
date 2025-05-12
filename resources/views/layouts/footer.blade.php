@@ -38,7 +38,7 @@
                             <a href="https://flowbite.com/" class="hover:underline">P-PAM</a>
                         </li>
                         <li class="mb-4">
-                            <a href="https://flowbite.com/" class="hover:underline">Orientering Nasional</a>
+                            <a href="https://flowbite.com/" class="hover:underline">Orienteering Nasional</a>
                         </li>
                         <li class="mb-4">
                             <a href="https://flowbite.com/" class="hover:underline">GEOI Fair</a>

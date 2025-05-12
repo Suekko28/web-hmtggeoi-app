@@ -85,7 +85,7 @@
             <h1 class="text-orange-primary font-extrabold text-3xl">Sejarah HMTG "GEOI"</h1>
         </div>
         <div class="description leading-8">
-            <p class="text-gray-600">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione vel doloribus illo
+            <p class="text-gray-700">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione vel doloribus illo
                 iusto ea error. Corrupti
                 iusto obcaecati perferendis, eaque doloremque dicta? Reprehenderit facere dolore culpa ullam porro molestias
                 voluptatem. </p>
@@ -105,7 +105,7 @@
             </div>
             <div class="w-full">
                 <h1 class="font-bold text-2xl mb-4"><i class="fa-solid fa-quote-left"></i> Visi</h1>
-                <p class=" text-base text-gray-600 leading-8">
+                <p class=" text-base text-gray-700 leading-8">
                     Himpunan Mahasiswa Teknik Geologi "GEOI" Organisasi Mahasiswa yang adaptif dalam memberikan
                     kebermanfaatan bagi Anggota HMTG "GEOI", Universitas Pakuan, dan masyarakat di sekitarnya.
                 </p>
@@ -119,7 +119,7 @@
             </div>
             <div class="w-full">
                 <h1 class="font-bold text-2xl mb-4"><i class="fa-solid fa-quote-left"></i> Misi</h1>
-                <p class="text-base text-gray-600 leading-8">
+                <p class="text-base text-gray-700 leading-8">
                     1. Membangun lingkungan internal yang solid dan apresiatif sebagai upaya meningkatkan peran serta fungsi
                     sumber daya organisasi. <br> <br>
                     2. Menjadikan HMTG "GEOI" sebagai wadah yang nyaman dan harmonis bagi anggota untuk berkembang dan
@@ -132,28 +132,91 @@
     </div>
 
     <!-- Program Kerja -->
-    <div class="container mx-auto mt-32 lg:px-32 sm:px-6">
+    <div class="container mx-auto mt-32 md:px-16 xl:px-32 sm:px-6">
         <div class="title">
             <h1 class="text-orange-primary font-extrabold text-3xl text-center">Program Kerja</h1>
         </div>
 
-        <div class="flex flex-wrap justify-center items-center gap-6">
+        <div class="flex lg:flex-nowrap sm:flex-wrap justify-center items-center gap-6 mt-12 content">
+            <div
+                class="p-6 bg-white border border-gray-200 shadow-lg w-full rounded-xl transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl">
+                <img src="{{ asset('/images/icon-mine.png') }}" alt="" class="mb-2">
+                <h1 class=" font-bold text-xl mb-2">P-PAM</h1>
+                <p class="text-gray-700 mb-4">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero fugit minima cumque nobis aliquid
+                    doloribus omnis soluta, at praesentium molestias natus dolore perspiciatis deserunt nisi totam maiores
+                    sequi eligendi incidunt?
+                </p>
+                <a href="#"
+                    class="inline-flex items-center py-2 transition duration-300 ease-in-out transform hover:underline hover:text-orange-primary ">
+                    Lihat Selengkapnya
+                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 5h12m0 0L9 1m4 4L9 9" />
+                    </svg>
+                </a>
+            </div>
 
-            <div class="p-6 bg-blue-200 max-w-xl md:max-w-lg w-full">
-                <h1>Test</h1>
-            </div>
-            <div class="p-6 bg-blue-200 max-w-xl md:max-w-lg w-full">
-                <h1>Test</h1>
-            </div>
-            <div class="p-6 bg-blue-200 max-w-xl  md:max-w-lg w-full">
-                <h1>Test</h1>
-            </div>
-            <div class="p-6 bg-blue-200 max-w-xl  md:max-w-lg w-full">
-                <h1>Test</h1>
+            <div
+                class="p-6 bg-white border border-gray-200 shadow-lg w-full rounded-xl transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl">
+                <img src="{{ asset('/images/icon-compass.png') }}" alt="" class="mb-2">
+                <h1 class=" font-bold text-xl mb-2">Orienteering Nasional</h1>
+                <p class="text-gray-700 mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam quisquam atque
+                    consequuntur, optio
+                    similique sed quam modi minima mollitia, libero quaerat ad? Libero dolore magni amet, totam tenetur
+                    beatae deleniti!</p>
+                <a href="#"
+                    class="inline-flex items-center py-2 transition duration-300 ease-in-out transform hover:underline hover:text-orange-primary ">
+                    Lihat Selengkapnya
+                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 5h12m0 0L9 1m4 4L9 9" />
+                    </svg>
+                </a>
 
             </div>
         </div>
+        <div class="flex lg:flex-nowrap sm:flex-wrap justify-center items-center gap-6 mt-6 content">
+            <div
+                class="p-6 bg-white border border-gray-200 shadow-lg w-full rounded-xl transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl">
+                <img src="{{ asset('/images/icon-calender.png') }}" alt="" class="mb-2">
+                <h1 class=" font-bold text-xl mb-2">GEOI Fair</h1>
+                <p class="text-gray-700 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius odio
+                    consectetur dignissimos blanditiis
+                    earum quam id, placeat magni ratione repellat cupiditate. Amet sed vero aliquid quidem reiciendis eius
+                    ratione praesentium.</p>
+                <a href="#"
+                    class="inline-flex items-center py-2 transition duration-300 ease-in-out transform hover:underline hover:text-orange-primary ">
+                    Lihat Selengkapnya
+                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 5h12m0 0L9 1m4 4L9 9" />
+                    </svg>
+                </a>
+            </div>
+            <div
+                class="p-6 bg-white border border-gray-200 shadow-lg w-full rounded-xl transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl">
+                <img src="{{ asset('/images/icon-celebration.png') }}" alt="" class="mb-2">
+                <h1 class=" font-bold text-xl mb-2">HUT HMTG "GEOI"</h1>
+                <p class="text-gray-700 mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi nostrum atque
+                    voluptate cumque velit nulla
+                    a placeat? Laboriosam, esse sunt nisi, quas fugiat eveniet dolores molestias facere atque voluptatem
+                    mollitia?</p>
+                <a href="#"
+                    class="inline-flex items-center py-2 transition duration-300 ease-in-out transform hover:underline hover:text-orange-primary ">
+                    Lihat Selengkapnya
+                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 5h12m0 0L9 1m4 4L9 9" />
+                    </svg>
+                </a>
+            </div>
 
+        </div>
     </div>
 
     <!-- Program Kerja End -->
@@ -162,7 +225,7 @@
     <div class="container mx-auto mt-32 lg:px-32 sm:px-6">
         <div class="title mb-12">
             <h1 class="font-extrabold text-3xl text-orange-primary">GEOI Store</h1>
-            <hr class="w-48 border-t-4 rounded">
+            <hr class="w-48 border-t-4 rounded-xl mt-2">
         </div>
         <div class="content p-5 bg-orange-50 rounded-xl">
             <div class="flex md:flex-nowrap sm:flex-wrap gap-6 content">
@@ -174,7 +237,8 @@
                         <h1>GEOI Store Offical</h1>
                     </div>
                     <div class="description text-center">
-                        <p> GEOI Store adalah toko online terpercaya yang menyediakan berbagai kebutuhan teknologi dan gaya
+                        <p class="text-gray-700"> GEOI Store adalah toko online terpercaya yang menyediakan berbagai
+                            kebutuhan teknologi dan gaya
                             hidup masa kini dengan harga kompetitif dan pelayanan terbaik.
                         </p>
                     </div>
@@ -182,7 +246,8 @@
                 <div class="overflow-x-auto scroll-container scroll-smooth snap-x snap-mandatory">
                     <div class="flex gap-4 w-max px-4">
                         <!-- Ulangi card di bawah ini sesuai kebutuhan -->
-                        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md shrink-0">
+                        <div
+                            class="w-full max-w-120 rounded-xl bg-white border border-gray-200 rounded-lg shadow-md shrink-0">
                             <a href="#">
                                 <img class="rounded-t-lg" src="{{ asset('/images/visual-1.png') }}" alt="" />
                             </a>
@@ -219,7 +284,7 @@
                                             d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
                                     </svg>
                                     <span
-                                        class="bg-orange-100 text-orange-primary text-xs font-semibold px-2.5 py-0.5 rounded-sm dark:bg-blue-200 dark:text-blue-800 ms-3">5.0</span>
+                                        class="bg-orange-100 text-orange-primary text-xs font-semibold px-2.5 py-0.5 rounded-sm dark:bg-white shadow-lg dark:text-blue-800 ms-3">5.0</span>
 
                                 </div>
                                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
@@ -227,7 +292,7 @@
                                     chronological order.
                                 </p>
                                 <a href="#"
-                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-orange-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-orange-primary dark:focus:ring-blue-800">
+                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-orange-primary rounded-lg hover:bg-orange-700 focus:ring-4 focus:outline-none focus:ring-orange-100">
                                     Beli Sekarang
                                     <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
                                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
@@ -237,7 +302,8 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md shrink-0">
+                        <div
+                            class="w-full max-w-120 rounded-xl bg-white border border-gray-200 rounded-lg shadow-md shrink-0">
                             <a href="#">
                                 <img class="rounded-t-lg" src="{{ asset('/images/visual-1.png') }}" alt="" />
                             </a>
@@ -274,7 +340,7 @@
                                             d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
                                     </svg>
                                     <span
-                                        class="bg-orange-100 text-orange-primary text-xs font-semibold px-2.5 py-0.5 rounded-sm dark:bg-blue-200 dark:text-blue-800 ms-3">5.0</span>
+                                        class="bg-orange-100 text-orange-primary text-xs font-semibold px-2.5 py-0.5 rounded-sm dark:bg-white shadow-lg dark:text-blue-800 ms-3">5.0</span>
 
                                 </div>
                                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
@@ -282,7 +348,7 @@
                                     chronological order.
                                 </p>
                                 <a href="#"
-                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-orange-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-orange-primary dark:focus:ring-blue-800">
+                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-orange-primary rounded-lg hover:bg-orange-700 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-orange-primary dark:focus:ring-blue-800">
                                     Beli Sekarang
                                     <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
                                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
@@ -293,7 +359,8 @@
                             </div>
                         </div>
 
-                        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md shrink-0">
+                        <div
+                            class="w-full max-w-120 rounded-xl bg-white border border-gray-200 rounded-lg shadow-md shrink-0">
                             <a href="#">
                                 <img class="rounded-t-lg" src="{{ asset('/images/visual-1.png') }}" alt="" />
                             </a>
@@ -330,7 +397,7 @@
                                             d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
                                     </svg>
                                     <span
-                                        class="bg-orange-100 text-orange-primary text-xs font-semibold px-2.5 py-0.5 rounded-sm dark:bg-blue-200 dark:text-blue-800 ms-3">5.0</span>
+                                        class="bg-orange-100 text-orange-primary text-xs font-semibold px-2.5 py-0.5 rounded-sm dark:bg-white shadow-lg dark:text-blue-800 ms-3">5.0</span>
 
                                 </div>
                                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
@@ -338,7 +405,7 @@
                                     chronological order.
                                 </p>
                                 <a href="#"
-                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-orange-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-orange-primary dark:focus:ring-blue-800">
+                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-orange-primary rounded-lg hover:bg-orange-700 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-orange-primary dark:focus:ring-blue-800">
                                     Beli Sekarang
                                     <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
                                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
@@ -348,7 +415,8 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md shrink-0">
+                        <div
+                            class="w-full max-w-120 rounded-xl bg-white border border-gray-200 rounded-lg shadow-md shrink-0">
                             <a href="#">
                                 <img class="rounded-t-lg" src="{{ asset('/images/visual-1.png') }}" alt="" />
                             </a>
@@ -385,7 +453,7 @@
                                             d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
                                     </svg>
                                     <span
-                                        class="bg-orange-100 text-orange-primary text-xs font-semibold px-2.5 py-0.5 rounded-sm dark:bg-blue-200 dark:text-blue-800 ms-3">5.0</span>
+                                        class="bg-orange-100 text-orange-primary text-xs font-semibold px-2.5 py-0.5 rounded-sm dark:bg-white shadow-lg dark:text-blue-800 ms-3">5.0</span>
 
                                 </div>
                                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
@@ -393,7 +461,7 @@
                                     chronological order.
                                 </p>
                                 <a href="#"
-                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-orange-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-orange-primary dark:focus:ring-blue-800">
+                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-orange-primary rounded-lg hover:bg-orange-700 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-orange-primary dark:focus:ring-blue-800">
                                     Beli Sekarang
                                     <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
                                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">

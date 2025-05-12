@@ -9,6 +9,8 @@
 :root {
     --color-orange-primary: #f1430e;
     --color-orange-200: #fdceab;
+    --color-orange-700: #c12e0d;
+    --color-orange-300: #fcab75;
     --color-orange-100: #ffe8d5;
     --color-orange-50: #fff5ed;
     --color-black-footer : #252525
@@ -20,10 +22,13 @@
         "Noto Color Emoji";
 
     --color-orange-primary: #f1430e;
+    --color-orange-300: #fcab75;
     --color-orange-200: #fdceab;
     --color-orange-100: #ffe8d5;
     --color-orange-50: #fff5ed;
-    --color-black-footer :#252525
+    --color-black-footer :#252525;
+    --color-orange-700: #c12e0d;
+
 
 
 
@@ -172,7 +177,7 @@ body {
 /* Navbar End */
 
 hr {
-    color: #fdceab;
+    color: var(--color-orange-200);
 }
 
 
