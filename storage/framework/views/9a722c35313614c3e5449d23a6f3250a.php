@@ -50,7 +50,7 @@
                 </div>
                 <div>
                     <h2 class="mb-6 text-sm font-semibold uppercase text-orange-primary">Social Media</h2>
-                    <div id="socialIcons" class="flex flex-row gap-4 items-center justify-start rounded-md">
+                    <div class="flex flex-row gap-4 items-center justify-start rounded-md">
                         <img class="w-6 h-6 object-contain" src="<?php echo e(asset('/images/logo-instagram.png')); ?>"
                             alt="Instagram">
                         <img class="w-6 h-6 object-contain" src="<?php echo e(asset('/images/logo-youtube.png')); ?>"
@@ -63,8 +63,10 @@
                     <ul class="text-white font-medium">
                         <div class="flex flex-row gap-2">
                             <li>
+                                <a href="mailto:hmtggeoi@gmail.com">
                                 <img class="w-6 h-6 object-contain sm:inline"
                                     src="<?php echo e(asset('/images/logo-email.png')); ?>" alt="Email">
+                                </a>
                             </li>
                             <li class="sm:block hidden">
                                 <a href="mailto:hmtggeoi@gmail.com" class="hover:underline">hmtggeoi@gmail.com</a>

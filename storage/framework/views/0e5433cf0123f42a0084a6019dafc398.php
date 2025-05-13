@@ -1,5 +1,3 @@
-
-
 <?php $__env->startSection('app-user'); ?>
     <nav id="mainNavbar" class="absolute top-0 left-0 w-full z-50 bg-transparent fixed">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -12,12 +10,12 @@
             </a>
 
             <!-- Tombol Hamburger dan Ikon Sosial Media (desktop only) -->
-            <div class="flex lg:order-2 items-center space-x-2 rounded-lg p-1">
+            <div class="flex lg:order-2 items-center space-x-2 rounded-lg">
                 <!-- Social Media Icons (visible only on sm and above) -->
-                <div id="socialIcons" class="hidden sm:flex flex-row gap-6 p-1 items-center rounded-md">
-                    <img class="w-6 h-6 object-contain" src="<?php echo e(asset('/images/logo-instagram.png')); ?>" alt="Instagram">
-                    <img class="w-6 h-6 object-contain" src="<?php echo e(asset('/images/logo-youtube.png')); ?>" alt="YouTube">
-                    <img class="w-6 h-6 object-contain" src="<?php echo e(asset('/images/logo-email.png')); ?>" alt="Email">
+                <div id="socialIcons" class="hidden sm:flex flex-row gap-6 py-2 px-6 items-center rounded-md">
+                    <img class="w-5 h-5 object-contain" src="<?php echo e(asset('/images/logo-instagram.png')); ?>" alt="Instagram">
+                    <img class="w-5 h-5 object-contain" src="<?php echo e(asset('/images/logo-youtube.png')); ?>" alt="YouTube">
+                    <img class="w-5 h-5 object-contain" src="<?php echo e(asset('/images/logo-email.png')); ?>" alt="Email">
                     
                 </div>
 
@@ -67,7 +65,7 @@
                                 </li>
                                 <li>
                                     <a href="#"
-                                        class="block px-4 py-2 hover:bg-gray-100 hover:text-orange-primary dark:hover:bg-gray-600 dark:hover:text-white">Orientering
+                                        class="block px-4 py-2 hover:bg-gray-100 hover:text-orange-primary dark:hover:bg-gray-600 dark:hover:text-white">Orienteering
                                         Nasional</a>
                                 </li>
                                 <li>
@@ -78,7 +76,7 @@
                                 <li>
                                     <a href="#"
                                         class="block px-4 py-2 hover:bg-gray-100 hover:text-orange-primary dark:hover:bg-gray-600 dark:hover:text-white">HUT
-                                        HMTG"GEOI"</a>
+                                        HMTG "GEOI"</a>
                                 </li>
                             </ul>
                         </div>
@@ -95,9 +93,9 @@
 
                 <!-- Social Media Icons for Mobile (will be colored on scroll) -->
                 <div id="mobileSocialIcons" class="flex flex-row gap-4 mt-4 sm:hidden justify-center rounded-md p-2">
-                    <img class="w-6 h-6 object-contain" src="<?php echo e(asset('/images/logo-instagram.png')); ?>" alt="Instagram">
-                    <img class="w-6 h-6 object-contain" src="<?php echo e(asset('/images/logo-youtube.png')); ?>" alt="YouTube">
-                    <img class="w-6 h-6 object-contain" src="<?php echo e(asset('/images/logo-email.png')); ?>" alt="Email">
+                    <img class="w-5 h-5 object-contain" src="<?php echo e(asset('/images/logo-instagram.png')); ?>" alt="Instagram">
+                    <img class="w-5 h-5 object-contain" src="<?php echo e(asset('/images/logo-youtube.png')); ?>" alt="YouTube">
+                    <img class="w-5 h-5 object-contain" src="<?php echo e(asset('/images/logo-email.png')); ?>" alt="Email">
                     
                 </div>
             </div>

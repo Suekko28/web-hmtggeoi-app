@@ -15,9 +15,15 @@
             <div class="flex lg:order-2 items-center space-x-2 rounded-lg">
                 <!-- Social Media Icons (visible only on sm and above) -->
                 <div id="socialIcons" class="hidden sm:flex flex-row gap-6 py-2 px-6 items-center rounded-md">
-                    <img class="w-5 h-5 object-contain" src="{{ asset('/images/logo-instagram.png') }}" alt="Instagram">
-                    <img class="w-5 h-5 object-contain" src="{{ asset('/images/logo-youtube.png') }}" alt="YouTube">
-                    <img class="w-5 h-5 object-contain" src="{{ asset('/images/logo-email.png') }}" alt="Email">
+                    <a href="">
+                        <img class="w-5 h-5 object-contain transition duration-300 ease-in-out transform hover:opacity-75" src="{{ asset('/images/logo-instagram.png') }}" alt="Instagram">
+                    </a>
+                    <a href="">
+                        <img class="w-6 h-6 object-contain transition duration-300 ease-in-out transform hover:opacity-75" src="{{ asset('/images/logo-youtube.png') }}" alt="YouTube">
+                    </a>
+                    <a href="">
+                        <img class="w-5 h-5 object-contain transition duration-300 ease-in-out transform hover:opacity-75" src="{{ asset('/images/logo-email.png') }}" alt="Email">
+                    </a>
                     {{-- <img class="w-5 h-5 object-contain" src="{{ asset('/images/logo-search.png') }}" alt="Search"> --}}
                 </div>
 

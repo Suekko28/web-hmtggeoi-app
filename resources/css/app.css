@@ -155,6 +155,7 @@ body {
 .navbar-scrolled {
     background-color: white !important;
     color: black !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .navbar-scrolled a {
@@ -188,5 +189,24 @@ hr {
     }
     .container .content {
         flex-wrap: wrap;
+    }
+
+    .container .content .card {
+        flex-wrap: wrap;
+        width: 320px;
+    }
+
+    .container .content-contact {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+
+    .container .content-card {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .container .content-card .instagram .email {
+        width: fit-content;
     }
 }
