@@ -1,5 +1,3 @@
-
-
 <?php $__env->startSection('app-user'); ?>
     <nav id="mainNavbar" class="absolute top-0 left-0 w-full z-50 bg-transparent fixed">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">

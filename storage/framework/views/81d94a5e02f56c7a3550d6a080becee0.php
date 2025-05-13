@@ -1,5 +1,3 @@
-
-
 <?php $__env->startSection('navbar'); ?>
     <!-- Carousel -->
     <div id="default-carousel" class="relative w-full" data-carousel="slide">
