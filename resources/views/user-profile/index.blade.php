@@ -36,8 +36,8 @@
 
     <!-- Hero -->
     <section id="Hero">
-        <div class="container mx-auto mt-32 lg:px-32 sm:px-6">
-            <div class="flex flex-row justify-center items-center gap-16 p-6 rounded-xl h-150">
+        <div class="container mx-auto mt-32 px-32 px-32 sm:px-6 lg:px-16 xl:px-32">
+            <div class="flex sm:flex-wrap lg:flex-nowrap justify-center items-center gap-16 p-6 rounded-xl h-150">
                 <div class="title w-full">
                     <h1 class="text-3xl font-extrabold text-orange-primary antialiased">Profile HMTG GEOI</h1>
                     <p class="mt-4 text-gray-700">
@@ -55,7 +55,7 @@
 
     <!-- Sejarah HMTGGEOI -->
     <section id="userProfile">
-        <div class="container mx-auto mt-32 lg:px-32 sm:px-6">
+        <div class="container mx-auto mt-32 px-32 px-32 sm:px-6 lg:px-16 xl:px-32">
             <div class="title">
                 <h1 class="text-orange-primary font-extrabold text-3xl antialiased">Sejarah HMTG "GEOI"</h1>
             </div>
@@ -73,7 +73,7 @@
 
     <!-- Visi & Misi -->
     <section id="VisiMisi">
-        <div class="container mx-auto mt-12 px-32 sm:px-6 lg:px-32 ">
+        <div class="container mx-auto mt-12 px-32 px-32 sm:px-6 lg:px-16 xl:px-32">
             <div class="title">
                 <h1 class="font-extrabold text-3xl text-orange-primary">HMTGGEOI</h1>
             </div>
@@ -84,7 +84,7 @@
                 menghadapi
                 berbagai tantangan pendidikan yang terus berkembang.</p>
             <!-- VISI -->
-            <div class="flex flex-row lg:flex-nowrap sm:flex-wrap gap-12 mt-12 content">
+            <div class="flex sm:flex-wrap lg:flex-nowrap gap-12 mt-12 content">
                 <div class="w-full">
                     <img src="{{ asset('/images/visual-1.png') }}" alt=""
                         class="w-full shadow-md object-cover h-full">

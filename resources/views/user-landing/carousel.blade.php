@@ -1,5 +1,3 @@
-<?php $__env->startSection('navbar'); ?>
-    <section id="userLanding">
         <!-- Carousel -->
         <section id="Carousel">
             <div id="default-carousel" class="relative w-full" data-carousel="slide">
@@ -77,16 +75,4 @@
                     </span>
                 </button>
             </div>
-        </section>
-        <!-- Carousel End -->
-
-        <?php echo $__env->make('sejarah-geoi', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?>
-        <?php echo $__env->make('visi-misi-geoi', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?>
-        <?php echo $__env->make('program-kerja-geoi', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?>
-        <?php echo $__env->make('store-geoi', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?>
-
-        <?php echo $__env->make('layouts.footer', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?>
-    </section>
-<?php $__env->stopSection(); ?>
-
-<?php echo $__env->make('layouts.navbar', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?><?php /**PATH C:\Users\USER\OneDrive\Documents\GitHub\web-hmtggeoi-app\resources\views\user-landing\index.blade.php ENDPATH**/ ?>
+            <!-- Carousel End -->
