@@ -6,31 +6,31 @@
                 <!-- Carousel wrapper -->
                 <div class="relative h-[720px] overflow-hidden">
                     <!-- Item 1 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <div class="hidden duration-400 ease-in-out" data-carousel-item>
                         <img src="/images/visual-1.png"
                             class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                             alt="...">
                     </div>
                     <!-- Item 2 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <div class="hidden duration-400 ease-in-out" data-carousel-item>
                         <img src="/images/visual-1.png"
                             class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                             alt="...">
                     </div>
                     <!-- Item 3 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <div class="hidden duration-400 ease-in-out" data-carousel-item>
                         <img src="/images/visual-1.png"
                             class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                             alt="...">
                     </div>
                     <!-- Item 4 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <div class="hidden duration-400 ease-in-out" data-carousel-item>
                         <img src="/images/visual-1.png"
                             class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                             alt="...">
                     </div>
                     <!-- Item 5 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <div class="hidden duration-400 ease-in-out" data-carousel-item>
                         <img src="/images/visual-1.png"
                             class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                             alt="...">
@@ -111,7 +111,7 @@
                 <div class="flex flex-row lg:flex-nowrap sm:flex-wrap gap-12 mt-12 content">
                     <div class="w-full">
                         <img src="<?php echo e(asset('/images/visual-1.png')); ?>" alt=""
-                            class="w-full shadow-md object-cover h-full">
+                            class="w-full shadow-md object-cover h-full rounded-xl">
                     </div>
                     <div class="w-full">
                         <h1 class="font-bold text-2xl mb-4"><i class="fa-solid fa-quote-left"></i> Visi</h1>
@@ -126,7 +126,7 @@
                 <div class="flex flex-row-reverse lg:flex-nowrap sm:flex-wrap gap-12 mt-12 content">
                     <div class="w-full">
                         <img src="<?php echo e(asset('/images/visual-1.png')); ?>" alt=""
-                            class="w-full shadow-md object-cover h-full">
+                            class="w-full shadow-md object-cover h-full rounded-xl">
                     </div>
                     <div class="w-full">
                         <h1 class="font-bold text-2xl mb-4"><i class="fa-solid fa-quote-left"></i> Misi</h1>
@@ -253,7 +253,7 @@
             <div class="container mx-auto mt-32 lg:px-32 sm:px-6">
                 <div class="title mb-12">
                     <h1 class="font-extrabold text-3xl text-orange-primary antialiased ">GEOI Store</h1>
-                    <hr class="w-48 border-t-4 rounded-xl mt-2">
+                    <hr class="w-45 border-t-5 rounded-xl mt-3">
                 </div>
                 <div class="content p-6 bg-orange-50 rounded-3xl">
                     <div class="flex md:flex-nowrap sm:flex-wrap gap-6 content">
@@ -263,7 +263,7 @@
                                     class="object-cover w-18 h-18">
                             </div>
                             <div class="title font-bold">
-                                <h1>GEOI Store Offical</h1>
+                                <h1>GEOI Store</h1>
                             </div>
                             <div class="description text-center">
                                 <p class="text-gray-700"> GEOI Store adalah toko online terpercaya yang menyediakan
@@ -330,7 +330,7 @@
                                             chronological order.
                                         </p>
                                         <a href="#"
-                                            class="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-orange-primary rounded-lg hover:bg-orange-700 focus:ring-4 focus:outline-none focus:ring-orange-100">
+                                            class="inline-flex items-center px-3 py-2 text-sm font-medium text-orange-primary border border-orange-primary rounded-lg transition duration-400 ease-in-out transform hover:bg-orange-primary hover:text-white focus:ring-4 focus:outline-none focus:ring-orange-100">
                                             Beli Sekarang
                                             <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
                                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
@@ -395,7 +395,7 @@
                                             chronological order.
                                         </p>
                                         <a href="#"
-                                            class="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-orange-primary rounded-lg hover:bg-orange-700 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-orange-primary dark:focus:ring-blue-800">
+                                            class="inline-flex items-center px-3 py-2 text-sm font-medium text-orange-primary border border-orange-primary rounded-lg transition duration-400 ease-in-out transform hover:bg-orange-primary hover:text-white focus:ring-4 focus:outline-none focus:ring-orange-100">
                                             Beli Sekarang
                                             <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
                                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
@@ -461,7 +461,7 @@
                                             chronological order.
                                         </p>
                                         <a href="#"
-                                            class="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-orange-primary rounded-lg hover:bg-orange-700 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-orange-primary dark:focus:ring-blue-800">
+                                            class="inline-flex items-center px-3 py-2 text-sm font-medium text-orange-primary border border-orange-primary rounded-lg transition duration-400 ease-in-out transform hover:bg-orange-primary hover:text-white focus:ring-4 focus:outline-none focus:ring-orange-100">
                                             Beli Sekarang
                                             <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
                                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
@@ -526,7 +526,7 @@
                                             chronological order.
                                         </p>
                                         <a href="#"
-                                            class="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-orange-primary rounded-lg hover:bg-orange-700 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-orange-primary dark:focus:ring-blue-800">
+                                            class="inline-flex items-center px-3 py-2 text-sm font-medium text-orange-primary border border-orange-primary rounded-lg transition duration-400 ease-in-out transform hover:bg-orange-primary hover:text-white focus:ring-4 focus:outline-none focus:ring-orange-100">
                                             Beli Sekarang
                                             <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
                                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
