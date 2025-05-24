@@ -8,22 +8,9 @@
 @endsection
 
 @section('pageContent')
-
-    <div class="toast toast-onload align-items-center text-bg-primary border-0" role="alert" aria-live="assertive"
-        aria-atomic="true">
-        <div class="toast-body hstack align-items-start gap-6">
-            <i class="ti ti-alert-circle fs-6"></i>
-            <div>
-                <h5 class="text-white fs-3 mb-1">Welcome to Modernize</h5>
-                <h6 class="text-white fs-2 mb-0">Easy to customize the Template!!!</h6>
-            </div>
-            <button type="button" class="btn-close btn-close-white fs-2 m-0 ms-auto shadow-none" data-bs-dismiss="toast"
-                aria-label="Close"></button>
-        </div>
-    </div>
     <div class="container">
-        <h1 class="title">Program Kerja</h1>
-        <div class="flex lg:flex-nowrap sm:flex-wrap justify-center gap-6 content">
+        <h3 class="title">Program Kerja</h3>
+        <div class="content">
             <div class="item">
                 <div class="card border-0 zoom-in bg-primary-subtle shadow-none">
                     <div class="card-body">
@@ -77,7 +64,7 @@
         </div>
     </div>
     <div class="container">
-        <h1 class="title">Alumni</h1>
+        <h3 class="title">Alumni</h3>
         <div class="flex lg:flex-nowrap sm:flex-wrap justify-center gap-6 content">
             <div class="item">
                 <div class="card border-0 zoom-in bg-primary-subtle shadow-none">
