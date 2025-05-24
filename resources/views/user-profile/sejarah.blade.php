@@ -1,6 +1,6 @@
     <!-- Sejarah HMTGGEOI -->
     <section id="userProfile">
-        <div class="container mx-auto px-32 px-32 sm:px-6 lg:px-16 xl:px-32">
+        <div class="container mx-auto mt-40 px-32 px-32 sm:px-6 lg:px-16 xl:px-32">
             <div class="title">
                 <h1 class="text-orange-primary font-extrabold text-3xl antialiased mb-3">Sejarah HMTG "GEOI"</h1>
             </div>

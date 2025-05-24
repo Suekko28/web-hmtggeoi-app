@@ -11,8 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('p_p_a_m_program_kerjas', function (Blueprint $table) {
+        Schema::create('ppam', function (Blueprint $table) {
             $table->id();
+            $table->string('image');
+            $table->string('title');
+            $table->string('slug');
+            $table->text('description');
             $table->timestamps();
         });
     }
@@ -22,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('p_p_a_m_program_kerjas');
+        Schema::dropIfExists('ppam');
     }
 };

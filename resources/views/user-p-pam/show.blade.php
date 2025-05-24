@@ -61,112 +61,27 @@
 
             <!-- Card Kegiatan -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 content">
-                <div class="md:max-w-[480px] sm:max-w-full bg-white rounded-lg">
-                    <a href="#">
-                        <img class="rounded-xl" src="{{ asset('/images/visual-1.png') }}" alt="" />
-                    </a>
-                    <div class="py-5">
+                @foreach ($data as $item)
+                    <div class="sm:max-w-sm md:max-w-sm bg-white rounded-lg">
                         <a href="#">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-orange-primary dark:text-white">
-                                Noteworthy
-                                technology acquisitions 2021</h5>
+                            <img class="rounded-xl" src="{{ asset('/images/visual-1.png') }}" alt="" />
                         </a>
-                        <p class="font-normal text-gray-700 dark:text-gray-700 line-clamp-3">Lorem ipsum dolor sit amet,
-                            consectetur
-                            adipisicing elit. Deleniti qui voluptas eaque laborum, aliquam a ipsa, soluta deserunt in
-                            aspernatur, eos ut eius incidunt excepturi et? Architecto sint dolor distinctio!</p>
+                        <div class="py-5">
+                            <a href="#">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-orange-primary dark:text-white">
+                                    {{ $item->title }}</h5>
+                            </a>
+                            <p class="font-normal text-gray-700 dark:text-gray-700 line-clamp-3">{!! $item->description !!}</p>
+                        </div>
+                        <div class="flex flex-row gap-2">
+                            <span class=""><i class="fa-solid fa-calendar-days"></i></span>
+                            <span class="text-sm font-semibold">{{ $item->created_at->translatedFormat('l, d F Y') }}</span>
+                        </div>
                     </div>
-                    <div class="flex flex-row gap-2">
-                        <span class=""><i class="fa-solid fa-calendar-days"></i></span>
-                        <span class="text-sm font-semibold">Sabtu, 11 Oktober 2024</span>
-                    </div>
-                </div>
-                <div class="md:max-w-[480px] sm:max-w-full bg-white rounded-lg">
-                    <a href="#">
-                        <img class="rounded-xl" src="{{ asset('/images/visual-1.png') }}" alt="" />
-                    </a>
-                    <div class="py-5">
-                        <a href="#">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-orange-primary dark:text-white">
-                                Noteworthy
-                                technology acquisitions 2021</h5>
-                        </a>
-                        <p class="font-normal text-gray-700 dark:text-gray-700 line-clamp-3">Lorem ipsum dolor sit amet,
-                            consectetur
-                            adipisicing elit. Deleniti qui voluptas eaque laborum, aliquam a ipsa, soluta deserunt in
-                            aspernatur, eos ut eius incidunt excepturi et? Architecto sint dolor distinctio!</p>
-                    </div>
-                    <div class="flex flex-row gap-2">
-                        <span class=""><i class="fa-solid fa-calendar-days"></i></span>
-                        <span class="text-sm font-semibold">Sabtu, 11 Oktober 2024</span>
-                    </div>
-                </div>
-                <div class="md:max-w-[480px] sm:max-w-full bg-white rounded-lg">
-                    <a href="#">
-                        <img class="rounded-xl" src="{{ asset('/images/visual-1.png') }}" alt="" />
-                    </a>
-                    <div class="py-5">
-                        <a href="#">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-orange-primary dark:text-white">
-                                Noteworthy
-                                technology acquisitions 2021</h5>
-                        </a>
-                        <p class="font-normal text-gray-700 dark:text-gray-700 line-clamp-3">Lorem ipsum dolor sit amet,
-                            consectetur
-                            adipisicing elit. Deleniti qui voluptas eaque laborum, aliquam a ipsa, soluta deserunt in
-                            aspernatur, eos ut eius incidunt excepturi et? Architecto sint dolor distinctio!</p>
-                    </div>
-                    <div class="flex flex-row gap-2">
-                        <span class=""><i class="fa-solid fa-calendar-days"></i></span>
-                        <span class="text-sm font-semibold">Sabtu, 11 Oktober 2024</span>
-                    </div>
-                </div>
-                <div class="sm:max-w-sm md:max-w-sm bg-white rounded-lg">
-                    <a href="#">
-                        <img class="rounded-xl" src="{{ asset('/images/visual-1.png') }}" alt="" />
-                    </a>
-                    <div class="py-5">
-                        <a href="#">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-orange-primary dark:text-white">
-                                Noteworthy
-                                technology acquisitions 2021</h5>
-                        </a>
-                        <p class="font-normal text-gray-700 dark:text-gray-700 line-clamp-3">Lorem ipsum dolor sit amet,
-                            consectetur
-                            adipisicing elit. Deleniti qui voluptas eaque laborum, aliquam a ipsa, soluta deserunt in
-                            aspernatur, eos ut eius incidunt excepturi et? Architecto sint dolor distinctio!</p>
-                    </div>
-                    <div class="flex flex-row gap-2">
-                        <span class=""><i class="fa-solid fa-calendar-days"></i></span>
-                        <span class="text-sm font-semibold">Sabtu, 11 Oktober 2024</span>
-                    </div>
-                </div>
-                <div class="sm:max-w-sm md:max-w-sm bg-white rounded-lg">
-                    <a href="#">
-                        <img class="rounded-xl" src="{{ asset('/images/visual-1.png') }}" alt="" />
-                    </a>
-                    <div class="py-5">
-                        <a href="#">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-orange-primary dark:text-white">
-                                Noteworthy
-                                technology acquisitions 2021</h5>
-                        </a>
-                        <p class="font-normal text-gray-700 dark:text-gray-700 line-clamp-3">Lorem ipsum dolor sit amet,
-                            consectetur
-                            adipisicing elit. Deleniti qui voluptas eaque laborum, aliquam a ipsa, soluta deserunt in
-                            aspernatur, eos ut eius incidunt excepturi et? Architecto sint dolor distinctio!</p>
-                    </div>
-                    <div class="flex flex-row gap-2">
-                        <span class=""><i class="fa-solid fa-calendar-days"></i></span>
-                        <span class="text-sm font-semibold">Sabtu, 11 Oktober 2024</span>
-                    </div>
-                </div>
+                @endforeach
             </div>
-
             <!-- Card Kegiatan End -->
-
-
-
+            <div class="p-2 mt-6">{{ $data->links('pagination::tailwind') }}</div>
         </div>
 
     </section>

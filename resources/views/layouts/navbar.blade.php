@@ -133,9 +133,9 @@
 
             window.addEventListener("scroll", function() {
                 const scrollY = window.scrollY;
-                const carouselHeight = heroCarousel ? heroCarousel.offsetHeight : 300;
+                const carouselHeight = heroCarousel ? heroCarousel.offsetHeight : 0;
 
-                if (scrollY > carouselHeight - 100) {
+                if (scrollY > carouselHeight - 0) {
                     navbar.classList.add("navbar-scrolled");
                     socialIcons.classList.add("bg-orange-primary");
                     mobileSocialIcons.classList.add("bg-orange-primary");

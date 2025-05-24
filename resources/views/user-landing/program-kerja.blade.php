@@ -1,6 +1,6 @@
         <!-- Program Kerja -->
         <section id="programKerja">
-            <div class="container mx-auto mt-32 md:px-16 xl:px-32 sm:px-6">
+            <div class="container mx-auto sm:mt-32 px-32 sm:px-6 lg:px-16 xl:px-32">
                 <div class="title">
                     <h1 class="text-orange-primary font-extrabold text-4xl text-center antialiased ">Program Kerja</h1>
                 </div>

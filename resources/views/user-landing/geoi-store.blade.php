@@ -1,6 +1,6 @@
         <!-- GEOI Store -->
         <section id="GEOIStore">
-            <div class="container mx-auto mt-32 lg:px-32 sm:px-6">
+            <div class="container mx-auto sm:mt-32 px-32 sm:px-6 lg:px-16 xl:px-32">
                 <div class="title mb-12">
                     <h1 class="font-extrabold text-4xl text-orange-primary antialiased ">GEOI Store</h1>
                     <hr class="w-55 border-t-5 rounded-xl mt-3">

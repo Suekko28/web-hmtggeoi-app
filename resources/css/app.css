@@ -13,7 +13,7 @@
     --color-orange-300: #fcab75;
     --color-orange-100: #ffe8d5;
     --color-orange-50: #fff5ed;
-    --color-black-footer : #252525
+    --color-black-footer: #252525;
 }
 
 @theme {
@@ -26,13 +26,8 @@
     --color-orange-200: #fdceab;
     --color-orange-100: #ffe8d5;
     --color-orange-50: #fff5ed;
-    --color-black-footer :#252525;
+    --color-black-footer: #252525;
     --color-orange-700: #c12e0d;
-
-
-
-
-
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
@@ -176,16 +171,19 @@ body {
 }
 
 /* Navbar End */
+ 
+#paginator{
+    box-shadow: none !important;
+}
 
 hr {
     color: var(--color-orange-300);
 }
 
-
 @media only screen and (max-width: 640px) {
-
     .container {
         padding: 24px;
+        margin-top: 32px;
     }
     .container .content {
         flex-wrap: wrap;

@@ -1,5 +1,5 @@
 <!-- VISI -->
-<div class="relative mt-12">
+<div class="relative sm:mt-32">
     <!-- Konten 1 -->
     <div class="relative z-20 gap-12 mb-12 lg:h-[420px]">
         <!-- Overlay -->

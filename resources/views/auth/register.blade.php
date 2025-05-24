@@ -8,7 +8,7 @@
             <div class="position-relative z-index-5">
                 <div class="row">
                     <div class="col-xl-7 col-xxl-8">
-                        <a  class="text-nowrap logo-img d-block px-4 py-9 w-100">
+                        <a class="text-nowrap logo-img d-block px-4 py-9 w-100">
                             <img src="{{ asset('/images/logo-hmtggeoi.png') }}" alt="logo" width="96" height="96">
                         </a>
                         <div class="d-none d-xl-flex align-items-center justify-content-center h-n80">
@@ -22,7 +22,7 @@
                             <div class="auth-max-width col-sm-8 col-md-6 col-xl-7 px-4">
                                 <h2 class="mb-1 fs-7 fw-bolder">Welcome to Register</h2>
                                 <p class="mb-7">Your Admin Dashboard</p>
-
+                                @include('layouts.message')
                                 <form method="POST" action="{{ route('register') }}">
                                     @csrf
                                     <div class="mb-3">

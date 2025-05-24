@@ -1,6 +1,6 @@
 <!-- Table -->
 <section id="tableAlumni">
-    <div class="container mx-auto px-32 px-32 sm:px-6 lg:px-16 xl:px-32 relative z-20">
+    <div class="container mx-auto mt-40 px-32 px-32 sm:px-6 lg:px-16 xl:px-32 relative z-20">
         <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
             <div class="pb-4 bg-white dark:bg-gray-900 mb-6">
                 <label for="table-search" class="sr-only">Search</label>

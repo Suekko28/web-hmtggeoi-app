@@ -14,6 +14,7 @@
                                 <a class="text-nowrap logo-img text-center d-block mb-5 w-100 mx-auto">
                                     <img src="{{ asset('/images/logo-hmtggeoi.png') }}" class="mx-auto" alt="logo" width="96" height="96">
                                 </a>
+                                @include('layouts.message')
                                 <form method="POST" action="{{ route('login') }}">
                                     @csrf
                                     <div class="mb-3">
