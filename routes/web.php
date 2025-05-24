@@ -28,5 +28,5 @@ Route::get('/alumni', function () {
 
 
 Route::get('/dashboard', function () {
-    return view('admin-dashboard.index');
+    return view('main.index');
 });
