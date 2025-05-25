@@ -6,7 +6,11 @@ use App\Http\Controllers\GEOIFairController;
 use App\Http\Controllers\HutHMTGController;
 use App\Http\Controllers\OrienteeringNasionalController;
 use App\Http\Controllers\PPAMController;
+use App\Http\Controllers\UserAlumniController;
+use App\Http\Controllers\UserGEOIFairController;
+use App\Http\Controllers\UserHutHMTGController;
 use App\Http\Controllers\UserLandingController;
+use App\Http\Controllers\UserOrienteeringNasionalController;
 use App\Http\Controllers\UserPPAMController;
 use Illuminate\Support\Facades\Route;
 
@@ -27,15 +31,20 @@ Route::get('/alumni-hmtg', function () {
 });
 
 
-// Route::get('/dashboard', function () {
-//     return view('admin-dashboard.index');
-// });
+Route::get('/program-kerja/p-pam', [UserPPAMController::class, 'index'])->name('program-kerja.p-pam.index');
+Route::get('/program-kerja/p-pam/{slug}', [UserPPAMController::class, 'show'])->name('program-kerja.p-pam.show');
 
-// Route::resource('/program-kerja/p-pam', UserPPAMController::class, [
-//     'as' => 'programkerja'
-// ]);
+Route::get('/program-kerja/orienteering-nasional', [UserOrienteeringNasionalController::class, 'index'])->name('program-kerja.orienteering.index');
+Route::get('/program-kerja/orienteering-nasional/{slug}', [UserOrienteeringNasionalController::class, 'show'])->name('program-kerja.orienteering.show');
 
-Route::get('/program-kerja/p-pam', [UserPPAMController::class, 'show'])->name('program-kerja.p-pam.show');
+Route::get('/program-kerja/geoi-fair', [UserGEOIFairController::class, 'index'])->name('program-kerja.geoi.index');
+Route::get('/program-kerja/geoi-fair/{slug}', [UserGEOIFairController::class, 'show'])->name('program-kerja.geoi.show');
+
+Route::get('/program-kerja/hut-hmtg-geoi', [UserHutHMTGController::class, 'index'])->name('program-kerja.hut.index');
+Route::get('/program-kerja/hut-hmtg-geoi/{slug}', [UserHutHMTGController::class, 'show'])->name('program-kerja.hut.show');
+
+Route::get('/alumni-hmtg', [UserAlumniController::class, 'index'])->name('alumni-hmtg.index');
+
 
 
 

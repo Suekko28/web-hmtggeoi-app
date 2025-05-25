@@ -2,11 +2,13 @@
 <section id="sejarahHMTGGEOI">
     <div class="container mx-auto sm:mt-32 px-32 sm:px-6 lg:px-16 xl:px-32">
         <div class="title text-center mb-16">
-            <h1 class="text-orange-primary font-extrabold text-4xl antialiased">Sejarah HMTG "GEOI"</h1>
+            <h1 class="text-orange-primary font-extrabold text-4xl antialiased" data-aos="fade-up"
+                data-aos-easing="ease-out-in">Sejarah HMTG
+                "GEOI"</h1>
         </div>
 
-        <div
-            class="flex flex-row sm:flex-wrap lg:flex-nowrap gap-6 bg-transparent border border-gray-100 p-6 rounded-xl shadow-md items-center content">
+        <div class="flex flex-row sm:flex-wrap lg:flex-nowrap gap-6 bg-transparent border border-gray-100 p-6 rounded-xl shadow-md items-center content"
+            data-aos="fade-right" data-aos-easing="ease-out-in">
             <!-- Teks Sejarah -->
             <div class="w-full lg:w-1/2">
                 <h2 class="text-orange-primary font-extrabold text-3xl antialiased mb-4">1984</h2>
@@ -28,8 +30,8 @@
             </div>
         </div>
 
-        <div
-            class="flex flex-row-reverse sm:flex-wrap lg:flex-nowrap gap-6 bg-transparent border border-gray-100 p-6 rounded-xl shadow-md items-center content mt-16">
+        <div class="flex flex-row-reverse sm:flex-wrap lg:flex-nowrap gap-6 bg-transparent border border-gray-100 p-6 rounded-xl shadow-md items-center content mt-16"
+            data-aos="fade-left" data-aos-easing="ease-out-in">
             <!-- Teks Sejarah -->
             <div class="w-full lg:w-1/2">
                 <h2 class="text-orange-primary font-extrabold text-3xl antialiased mb-4">Asal Usul "GEOI"</h2>
@@ -52,8 +54,8 @@
             </div>
         </div>
 
-        <div
-            class="flex flex-row sm:flex-wrap lg:flex-nowrap gap-6 bg-transparent border border-gray-100 p-6 rounded-xl shadow-md items-center content mt-16">
+        <div class="flex flex-row sm:flex-wrap lg:flex-nowrap gap-6 bg-transparent border border-gray-100 p-6 rounded-xl shadow-md items-center content mt-16"
+            data-aos="fade-right" data-aos-easing="ease-out-in">
             <!-- Teks Sejarah -->
             <div class="w-full lg:w-1/2">
                 <h2 class="text-orange-primary font-extrabold text-3xl antialiased mb-4">Makna Lambang</h2>

@@ -32,6 +32,10 @@
         .social-media {
             background-color: none !important;
         }
+
+        nav a.text-orange-primary {
+            color: var(--color-orange-primary) !important;
+        }
     </style>
     <div class="absolute z-10 inset-0">
         <img src="{{ asset('/images/visual-9.jpg') }}" alt="Background" class="h-[700px] w-full object-cover opacity-6">

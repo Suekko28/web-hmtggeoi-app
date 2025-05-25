@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HMTGGEOI</title>
+    <title>HMTG"GEOI"</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -20,6 +20,22 @@
     <script>
         AOS.init();
     </script>
+    
+    <!-- Inisialisasi AOS -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                easing: 'ease-out-in',
+                duration: 1000
+            });
+        });
+    </script>
+
+
+    <!-- Logo Icon -->
+    <link rel="shortcut icon" type="image/svg+xml" href="{{ asset('images/logo-hmtggeoi.png') }}">
+
+
     <!-- Di <head> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
 

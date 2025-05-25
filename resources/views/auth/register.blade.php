@@ -1,6 +1,6 @@
 @extends('layouts.master-auth')
 
-@section('title', 'JejakKebahagiaan')
+@section('title', 'Register')
 
 @section('pageContent')
     <div id="main-wrapper" class="auth-customizer-none">

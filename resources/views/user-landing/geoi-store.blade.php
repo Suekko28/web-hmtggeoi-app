@@ -2,10 +2,10 @@
         <section id="GEOIStore">
             <div class="container mx-auto sm:mt-32 px-32 sm:px-6 lg:px-16 xl:px-32">
                 <div class="title mb-12">
-                    <h1 class="font-extrabold text-4xl text-orange-primary antialiased ">GEOI Store</h1>
-                    <hr class="w-55 border-t-5 rounded-xl mt-3">
+                    <h1 class="font-extrabold text-4xl text-orange-primary antialiased" data-aos="fade-up-right" data-aos-easing="ease-out-in">GEOI Store</h1>
+                    <hr class="w-55 border-t-5 rounded-xl mt-3" data-aos="fade-right" data-aos-easing="ease-out-in">
                 </div>
-                <div class="content p-6 bg-orange-50 rounded-3xl shadow-lg">
+                <div class="content p-6 bg-orange-50 rounded-3xl shadow-lg" data-aos="fade-right" data-aos-easing="ease-out-in">
                     <div class="flex md:flex-nowrap sm:flex-wrap gap-6 content">
                         <div class="flex flex-col sm:w-full xl:w-full 2xl:w-1/2 gap-3 justify-center items-center">
                             <div class="logo-shopee">
@@ -23,13 +23,13 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="overflow-x-auto scroll-container scroll-smooth snap-x snap-mandatory">
+                        <div class="overflow-x-auto overflow-y-hidden scroll-container scroll-smooth snap-x snap-mandatory">
                             <div class="flex gap-4 w-max px-4">
                                 <!-- Ulangi card di bawah ini sesuai kebutuhan -->
                                 <div
-                                    class="w-full max-w-120 rounded-xl bg-white border border-gray-200 rounded-lg shadow-md shrink-0">
+                                    class="w-full max-w-120 rounded-xl bg-white border border-gray-200 rounded-lg shadow-md shrink-0 h-[490px]">
                                     <a href="#">
-                                        <img class="rounded-t-lg" src="{{ asset('/images/visual-1.png') }}"
+                                        <img class="rounded-t-lg object-cover w-full h-64" src="{{ asset('/images/visual-6.jpg') }}"
                                             alt="" />
                                     </a>
                                     <div class="p-5">
@@ -92,9 +92,9 @@
                                     </div>
                                 </div>
                                 <div
-                                    class="w-full max-w-120 rounded-xl bg-white border border-gray-200 rounded-lg shadow-md shrink-0">
+                                    class="w-full max-w-120 rounded-xl bg-white border border-gray-200 rounded-lg shadow-md shrink-0 h-[490px]">
                                     <a href="#">
-                                        <img class="rounded-t-lg" src="{{ asset('/images/visual-1.png') }}"
+                                        <img class="rounded-t-lg object-cover w-full h-64" src="{{ asset('/images/visual-1.png') }}"
                                             alt="" />
                                     </a>
                                     <div class="p-5">
@@ -158,9 +158,9 @@
                                 </div>
 
                                 <div
-                                    class="w-full max-w-120 rounded-xl bg-white border border-gray-200 rounded-lg shadow-md shrink-0">
+                                    class="w-full max-w-120 rounded-xl bg-white border border-gray-200 rounded-lg shadow-md shrink-0 h-[490px]">
                                     <a href="#">
-                                        <img class="rounded-t-lg" src="{{ asset('/images/visual-1.png') }}"
+                                        <img class="rounded-t-lg object-cover w-full h-64" src="{{ asset('/images/visual-1.png') }}"
                                             alt="" />
                                     </a>
                                     <div class="p-5">
@@ -223,9 +223,9 @@
                                     </div>
                                 </div>
                                 <div
-                                    class="w-full max-w-120 rounded-xl bg-white border border-gray-200 rounded-lg shadow-md shrink-0">
+                                    class="w-full max-w-120 rounded-xl bg-white border border-gray-200 rounded-lg shadow-md shrink-0 h-[490px]">
                                     <a href="#">
-                                        <img class="rounded-t-lg" src="{{ asset('/images/visual-1.png') }}"
+                                        <img class="rounded-t-lg object-cover w-full h-64" src="{{ asset('/images/visual-1.png') }}"
                                             alt="" />
                                     </a>
                                     <div class="p-5">

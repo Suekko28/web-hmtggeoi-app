@@ -1,6 +1,6 @@
 @extends('layouts.master-auth')
 
-@section('title', 'HMTG "GEOI"')
+@section('title', 'Login')
 
 @section('pageContent')
     <div id="main-wrapper" class="auth-customizer-none">

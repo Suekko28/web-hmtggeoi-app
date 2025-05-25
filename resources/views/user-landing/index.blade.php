@@ -1,6 +1,11 @@
 @extends('layouts.navbar')
 
 @section('navbar')
+    <style>
+        nav a.text-orange-primary {
+            color: var(--color-orange-primary) !important;
+        }
+    </style>
     <section id="userLanding">
         @include('user-landing.carousel')
         <div class="background-image fixed mx-auto top-20 -z-100 opacity-5 object-cover w-full h-full">

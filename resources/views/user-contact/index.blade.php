@@ -32,9 +32,13 @@
         .social-media {
             background-color: none !important;
         }
+
+        nav a.text-orange-primary {
+            color: var(--color-orange-primary) !important;
+        }
     </style>
 
-        @include('user-contact.card')
-        @include('layouts.footer')
+    @include('user-contact.card')
+    @include('layouts.footer')
     </section>
 @endsection

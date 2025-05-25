@@ -1,9 +1,9 @@
 <section id="sejarahHMTGGEOI">
     <div class="container mx-auto sm:mt-32 px-32 sm:px-6 lg:px-16 xl:px-32">
         <div class="title mb-12">
-            <h1 class="font-extrabold text-4xl text-orange-primary antialiased ">Struktur Organisasi</h1>
+            <h1 class="font-extrabold text-4xl text-orange-primary antialiased" data-aos="fade-up" data-aos-easing="ease-out-in">Struktur Organisasi</h1>
         </div>
-        <div class="flex lg:flex-nowrap sm:flex-wrap justify-center gap-6 content">
+        <div class="flex lg:flex-nowrap sm:flex-wrap justify-center gap-6 content" data-aos="fade-up" data-aos-easing="ease-out-in">
             <div class="visual-image w-full ">
                 <a data-fancybox="gallery" href="{{ asset('/images/struktur-organisasi-1.jpg') }}">
                     <img src="{{ asset('/images/struktur-organisasi-1.jpg') }}" alt="Foto Profile"

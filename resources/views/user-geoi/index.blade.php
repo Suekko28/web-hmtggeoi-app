@@ -36,13 +36,17 @@
         .description img {
             display: none;
         }
+        
+        nav a.text-orange-primary {
+            color: var(--color-orange-primary) !important;
+        }
     </style>
 
     <section id="userPPAM">
         <div class="container mx-auto mt-32 px-32 sm:px-6 lg:px-16 xl:px-32">
             <!-- Header -->
             <div class="flex flex-wrap justify-between items-center mb-12">
-                <h1 class="text-orange-primary text-3xl font-extrabold">Orienteering Nasional</h1>
+                <h1 class="text-orange-primary text-3xl font-extrabold">GEOI Fair</h1>
                 <div class="search-bar">
                     <div class="relative lg:w-1/2 w-full mx-auto">
                         <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
@@ -74,13 +78,13 @@
                 @else
                     @foreach ($data as $item)
                         <div class="sm:max-w-sm md:max-w-sm bg-white rounded-lg h-[400px]">
-                            <a href="{{ route('program-kerja.orienteering.show', $item->slug) }}" class="flex-shrink-0">
+                            <a href="{{ route('program-kerja.geoi.show', $item->slug) }}" class="flex-shrink-0">
                                 <img class="rounded-xl object-cover w-full h-64"
-                                    src="{{ Storage::url('orienteering/' . $item->image) }}" alt="" />
+                                    src="{{ Storage::url('geoi/' . $item->image) }}" alt="" />
                             </a>
                             <div class="flex flex-col flex-grow justify-between mt-4">
                                 <div>
-                                    <a href="{{ route('program-kerja.orienteering.show', $item->slug) }}">
+                                    <a href="{{ route('program-kerja.geoi.show', $item->slug) }}">
                                         <h5
                                             class="mb-2 text-2xl font-bold tracking-tight text-orange-primary dark:text-white line-clamp-2">
                                             {{ $item->title }}

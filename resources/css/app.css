@@ -143,10 +143,10 @@
 
 body {
     font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
 }
 
 /* Navbar */
-
 .navbar-scrolled {
     background-color: white !important;
     color: black !important;
@@ -170,11 +170,14 @@ body {
     color: black !important;
 }
 
-/* Navbar End */
- 
-#paginator{
+
+#paginator {
     box-shadow: none !important;
 }
+
+/* Navbar End */
+
+
 
 hr {
     color: var(--color-orange-300);

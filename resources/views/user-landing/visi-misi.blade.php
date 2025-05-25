@@ -1,7 +1,7 @@
 <!-- VISI -->
 <div class="relative sm:mt-32">
     <!-- Konten 1 -->
-    <div class="relative z-20 gap-12 mb-12 lg:h-[420px]">
+    <div class="relative z-20 gap-12 mb-12 lg:h-[420px]" data-aos="fade-up-right" data-aos-easing="ease-out-in">
         <!-- Overlay -->
         <div class="absolute inset-0 z-5">
             <img src="{{ asset('/images/visual-5.jpg') }}" class="absolute block w-full h-full object-cover"
@@ -24,7 +24,7 @@
     </div>
 
     <!-- Konten 1 -->
-    <div class="relative z-20 gap-12 mb-12 lg:h-[420px]">
+    <div class="relative z-20 gap-12 mb-12 lg:h-[420px]" data-aos="fade-up-left" data-aos-easing="ease-out-in">
         <!-- Overlay -->
         <div class="absolute inset-0 z-5">
             <img src="{{ asset('/images/visual-8.jpg') }}" class="absolute block w-full h-full object-cover"

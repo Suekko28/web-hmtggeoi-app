@@ -3,7 +3,7 @@
 @section('app-user')
     <nav id="mainNavbar" class="absolute top-0 left-0 w-full z-60 bg-transparent fixed">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="{{ asset('/images/logo-hmtggeoi.png') }}" class="h-12" alt="HMTGGEOI Logo" />
                 <div class="flex flex-col text-white hidden sm:block">
                     <span class="text-2xl font-bold whitespace-nowrap">HMTG "GEOI"</span>
@@ -15,14 +15,18 @@
             <div class="flex lg:order-2 items-center space-x-2 rounded-lg">
                 <!-- Social Media Icons (visible only on sm and above) -->
                 <div id="socialIcons" class="hidden sm:flex flex-row gap-6 py-2 px-6 items-center rounded-md">
-                    <a href="">
-                        <img class="w-5 h-5 object-contain transition duration-300 ease-in-out transform hover:opacity-75" src="{{ asset('/images/logo-instagram.png') }}" alt="Instagram">
+                    <a href="https://www.instagram.com/hmtggeoi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        target="_blank">
+                        <img class="w-5 h-5 object-contain transition duration-300 ease-in-out transform hover:opacity-75"
+                            src="{{ asset('/images/logo-instagram.png') }}" alt="Instagram">
                     </a>
-                    <a href="">
-                        <img class="w-6 h-6 object-contain transition duration-300 ease-in-out transform hover:opacity-75" src="{{ asset('/images/logo-youtube.png') }}" alt="YouTube">
+                    <a href="https://youtube.com/@hmtggeoi1896?si=PFA5iutp13FzelAo" target="_blank">
+                        <img class="w-6 h-6 object-contain transition duration-300 ease-in-out transform hover:opacity-75"
+                            src="{{ asset('/images/logo-youtube.png') }}" alt="YouTube">
                     </a>
-                    <a href="">
-                        <img class="w-5 h-5 object-contain transition duration-300 ease-in-out transform hover:opacity-75" src="{{ asset('/images/logo-email.png') }}" alt="Email">
+                    <a href="mailto:hmtggeoi@gmail.com">
+                        <img class="w-5 h-5 object-contain transition duration-300 ease-in-out transform hover:opacity-75"
+                            src="{{ asset('/images/logo-email.png') }}" alt="Email">
                     </a>
                     {{-- <img class="w-5 h-5 object-contain" src="{{ asset('/images/logo-search.png') }}" alt="Search"> --}}
                 </div>
@@ -46,17 +50,36 @@
                 <ul
                     class="flex flex-col p-4 lg:p-0 mt-4 font-medium rounded-lg lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0">
                     <li>
-                        <a href="#"
-                            class="block py-2 px-3 font-bold text-white bg-orange-primary rounded-sm lg:bg-transparent lg:text-orange-primary lg:p-0"
-                            aria-current="page">Home</a>
+                        <a href="/"
+                            class="block py-2 px-3 font-bold rounded-sm lg:p-0
+          {{ Request::is('/') ? 'text-orange-primary' : 'text-white lg:hover:text-orange-primary' }}">
+                            Home
+                        </a>
                     </li>
                     <li>
-                        <a href="#"
-                            class="block py-2 px-3 font-bold rounded-sm hover:text-orange-primary hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-orange-primary lg:p-0 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent">Profile</a>
+                        <a href="/profile"
+                            class="block py-2 px-3 font-bold rounded-sm lg:p-0
+                               {{ Request::is('profile') ? 'text-orange-primary' : 'text-white lg:hover:text-orange-primary' }}">
+                            Profile
+                        </a>
                     </li>
+                    @php
+                        $isActiveProgramKerja =
+                            request()->routeIs('program-kerja.p-pam.*') ||
+                            request()->routeIs('program-kerja.orienteering.*') ||
+                            request()->routeIs('program-kerja.geoi.*') ||
+                            request()->routeIs('program-kerja.hut.*');
+                    @endphp
+
+
                     <li class="relative">
                         <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
-                            class="flex items-center justify-between font-bold w-full py-2 px-3 rounded-sm hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-orange-primary lg:p-0 lg:w-auto dark:text-white lg:dark:hover:text-orange-primary dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 lg:dark:hover:bg-transparent">
+                            class="flex items-center justify-between font-bold w-full py-2 px-3 rounded-sm
+                        hover:bg-gray-100 lg:hover:bg-transparent lg:border-0
+                        lg:hover:text-orange-primary lg:p-0 lg:w-auto
+                        dark:text-white lg:dark:hover:text-orange-primary dark:focus:text-white
+                        dark:border-gray-700 dark:hover:bg-gray-700 lg:dark:hover:bg-transparent
+                        {{ $isActiveProgramKerja ? 'text-orange-primary dark:text-orange-primary' : '' }}">
                             Program Kerja
                             <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                 fill="none" viewBox="0 0 10 6">
@@ -64,46 +87,69 @@
                                     d="m1 1 4 4 4-4" />
                             </svg>
                         </button>
+
                         <div id="dropdownNavbar"
                             class="hidden absolute z-10 font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600 transition-all duration-200">
                             <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownNavbarLink">
                                 <li>
-                                    <a href="#"
-                                        class="block px-4 py-2 hover:bg-gray-100 hover:text-orange-primary dark:hover:bg-gray-600 dark:hover:text-white">P-PAM</a>
+                                    <a href="{{ route('program-kerja.p-pam.index') }}"
+                                        class="block px-4 py-2 hover:bg-gray-100 hover:text-orange-primary dark:hover:bg-gray-600 dark:hover:text-white
+                                    {{ request()->routeIs('program-kerja.p-pam.*') ? 'font-semibold' : '' }}">
+                                        P-PAM
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="#"
-                                        class="block px-4 py-2 hover:bg-gray-100 hover:text-orange-primary dark:hover:bg-gray-600 dark:hover:text-white">Orienteering
-                                        Nasional</a>
+                                    <a href="{{ route('program-kerja.orienteering.index') }}"
+                                        class="block px-4 py-2 hover:bg-gray-100 hover:text-orange-primary dark:hover:bg-gray-600 dark:hover:text-white
+                                {{ request()->routeIs('program-kerja.orienteering.*') ? 'font-semibold' : '' }}">
+                                        Orienteering Nasional
+                                    </a>
+
                                 </li>
                                 <li>
-                                    <a href="#"
-                                        class="block px-4 py-2 hover:bg-gray-100 hover:text-orange-primary dark:hover:bg-gray-600 dark:hover:text-white">GEOI
-                                        Fair</a>
+                                    <a href="{{ route('program-kerja.geoi.index') }}"
+                                        class="block px-4 py-2 hover:bg-gray-100 hover:text-orange-primary dark:hover:bg-gray-600 dark:hover:text-white
+                                    {{ request()->routeIs('program-kerja.geoi.*') ? 'font-semibold' : '' }}">
+                                        GEOI Fair
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="#"
-                                        class="block px-4 py-2 hover:bg-gray-100 hover:text-orange-primary dark:hover:bg-gray-600 dark:hover:text-white">HUT
-                                        HMTG "GEOI"</a>
+                                    <a href="{{ route('program-kerja.hut.index') }}"
+                                        class="block px-4 py-2 hover:bg-gray-100 hover:text-orange-primary dark:hover:bg-gray-600 dark:hover:text-white
+                                    {{ request()->routeIs('program-kerja.hut.*') ? 'font-semibold' : '' }}">
+                                        HUT HMTG "GEOI"
+                                    </a>
                                 </li>
                             </ul>
                         </div>
                     </li>
                     <li>
-                        <a href="#"
-                            class="block py-2 px-3 font-bold rounded-sm hover:text-orange-primary hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-orange-primary lg:p-0 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent">Alumni</a>
+                        <a href="{{ route('alumni-hmtg.index') }}"
+                            class="{{ Request::is('alumni-hmtg') ? 'text-orange-primary' : 'text-white lg:hover:text-orange-primary' }} block py-2 px-3 font-bold rounded-sm hover:text-orange-primary hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-orange-primary lg:p-0 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent">Alumni</a>
                     </li>
                     <li>
-                        <a href="#"
-                            class="block py-2 px-3 font-bold rounded-sm hover:text-orange-primary hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-orange-primary lg:p-0 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent">Contact</a>
+                        <a href="/contact"
+                            class="block py-2 px-3 font-bold rounded-sm lg:p-0 
+    {{ Request::is('contact') ? 'text-orange-primary' : 'text-white lg:hover:text-orange-primary' }}">
+                            Contact
+                        </a>
+
                     </li>
                 </ul>
 
                 <!-- Social Media Icons for Mobile (will be colored on scroll) -->
                 <div id="mobileSocialIcons" class="flex flex-row gap-4 mt-4 sm:hidden justify-center rounded-md p-2">
-                    <img class="w-5 h-5 object-contain" src="{{ asset('/images/logo-instagram.png') }}" alt="Instagram">
-                    <img class="w-5 h-5 object-contain" src="{{ asset('/images/logo-youtube.png') }}" alt="YouTube">
-                    <img class="w-5 h-5 object-contain" src="{{ asset('/images/logo-email.png') }}" alt="Email">
+                    <a href="https://www.instagram.com/hmtggeoi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        target="_blank">
+                        <img class="w-5 h-5 object-contain" src="{{ asset('/images/logo-instagram.png') }}"
+                            alt="Instagram">
+                    </a>
+                    <a href="https://youtube.com/@hmtggeoi1896?si=PFA5iutp13FzelAo" target="_blank">
+                        <img class="w-5 h-5 object-contain" src="{{ asset('/images/logo-youtube.png') }}" alt="YouTube">
+                    </a>
+                    <a href="mailto:hmtggeoi@gmail.com">
+                        <img class="w-5 h-5 object-contain" src="{{ asset('/images/logo-email.png') }}" alt="Email">
+                    </a>
                     {{-- <img class="w-5 h-5 object-contain" src="{{ asset('/images/logo-search.png') }}" alt="Search"> --}}
                 </div>
             </div>

@@ -36,11 +36,14 @@
         .description img {
             display: none;
         }
+        nav a.text-orange-primary {
+            color: var(--color-orange-primary) !important;
+        }
     </style>
 
     <section id="userPPAM">
         <div class="hero w-full">
-            <img src="{{ Storage::url('p-pam/' . $data->image) }}" alt=""
+            <img src="{{ Storage::url('geoi/' . $data->image) }}" alt=""
                 class="object-cover h-[600px] max-w-full w-full">
         </div>
         <div class="container mx-auto mt-16 px-32 sm:px-6 lg:px-16 xl:px-32">
@@ -67,13 +70,13 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 content mt-6">
                 @foreach ($lastUpdate as $item)
                     <div class="sm:max-w-sm md:max-w-sm bg-white rounded-lg h-[400px]">
-                        <a href="{{ route('program-kerja.p-pam.show', $item->slug) }}" class="flex-shrink-0">
+                        <a href="{{ route('program-kerja.geoi.show', $item->slug) }}" class="flex-shrink-0">
                             <img class="rounded-xl object-cover w-full h-64"
-                                src="{{ Storage::url('p-pam/' . $item->image) }}" alt="" />
+                                src="{{ Storage::url('geoi/' . $item->image) }}" alt="" />
                         </a>
                         <div class="flex flex-col flex-grow justify-between mt-4">
                             <div>
-                                <a href="{{ route('program-kerja.p-pam.show', $item->slug) }}">
+                                <a href="{{ route('program-kerja.geoi.show', $item->slug) }}">
                                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-orange-primary line-clamp-2 dark:text-white ">
                                         {{ $item->title }}
                                     </h5>

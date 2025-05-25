@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('title', 'HMTGGEOI')
+@section('title', 'Admin')
 
 @section('pageContent')
     <style>

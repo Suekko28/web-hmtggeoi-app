@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('title', 'Modernize Bootstrap Admin')
+@section('title', 'Admin')
 
 @section('css')
     <!-- Owl Carousel  -->

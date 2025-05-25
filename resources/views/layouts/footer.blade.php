@@ -51,10 +51,15 @@
                 <div>
                     <h2 class="mb-6 text-sm font-semibold uppercase text-orange-primary">Social Media</h2>
                     <div class="flex flex-row gap-4 items-center justify-start rounded-md">
-                        <img class="w-6 h-6 object-contain" src="{{ asset('/images/logo-instagram.png') }}"
-                            alt="Instagram">
-                        <img class="w-6 h-6 object-contain" src="{{ asset('/images/logo-youtube.png') }}"
-                            alt="YouTube">
+                        <a href="https://www.instagram.com/hmtggeoi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                            target="_blank">
+                            <img class="w-6 h-6 object-contain transition duration-300 ease-in-out transform hover:opacity-75"
+                                src="{{ asset('/images/logo-instagram.png') }}" alt="Instagram">
+                        </a>
+                        <a href="https://youtube.com/@hmtggeoi1896?si=PFA5iutp13FzelAo" target="_blank">
+                            <img class="w-6 h-6 object-contain transition duration-300 ease-in-out transform hover:opacity-75"
+                                src="{{ asset('/images/logo-youtube.png') }}" alt="YouTube">
+                        </a>
                         {{-- <img class="w-6 h-6 object-contain" src="{{ asset('/images/logo-search.png') }}" alt="Search"> --}}
                     </div>
                 </div>
@@ -64,8 +69,8 @@
                         <div class="flex flex-row gap-2">
                             <li>
                                 <a href="mailto:hmtggeoi@gmail.com">
-                                <img class="w-6 h-6 object-contain sm:inline"
-                                    src="{{ asset('/images/logo-email.png') }}" alt="Email">
+                                    <img class="w-6 h-6 object-contain sm:inline"
+                                        src="{{ asset('/images/logo-email.png') }}" alt="Email">
                                 </a>
                             </li>
                             <li class="sm:block hidden">
