@@ -32,7 +32,7 @@
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a class="sidebar-link has-arrow {{ request()->is('p-pam', 'orienteering-nasional', '') ? 'active' : '' }}"
+                    <a class="sidebar-link has-arrow {{ request()->is('p-pam', 'orienteering-nasional', 'geoi-fair', 'hut-hmtg', '') ? 'active' : '' }}"
                         href="javascript:void(0)" aria-expanded="false">
                         <span class="d-flex">
                             <i class="ti ti-chart-donut-3"></i>
@@ -51,7 +51,7 @@
                         </li>
                         <li class="sidebar-item">
                             <a href="{{ route('orienteering-nasional.index') }}"
-                                class="sidebar-link {{ request()->is('orienteering-nasional') ? 'active' : '' }}"
+                                class="sidebar-link {{ request()->is('orienteering-nasional', '') ? 'active' : '' }}"
                                 aria-expanded="false">
                                 <div class="round-16 d-flex align-items-center justify-content-center">
                                     <i class="ti ti-circle"></i>
@@ -60,7 +60,8 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="" class="sidebar-link {{ request()->is('') ? 'active' : '' }}">
+                            <a href="{{ route('geoi-fair.index') }}"
+                                class="sidebar-link {{ request()->is('geoi-fair', '') ? 'active' : '' }}">
                                 <div class="round-16 d-flex align-items-center justify-content-center">
                                     <i class="ti ti-circle"></i>
                                 </div>
@@ -68,7 +69,8 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="" class="sidebar-link {{ request()->is('') ? 'active' : '' }}">
+                            <a href="{{ route('hut-hmtg.index') }}"
+                                class="sidebar-link {{ request()->is('hut-hmtg', '') ? 'active' : '' }}">
                                 <div class="round-16 d-flex align-items-center justify-content-center">
                                     <i class="ti ti-circle"></i>
                                 </div>
@@ -78,14 +80,14 @@
                     </ul>
                 </li>
                 <li class="sidebar-item">
-                    <a class="sidebar-link {{ request()->is('main/index6') ? 'active' : '' }}" aria-expanded="false">
+                    <a href="{{ route('alumni.index') }}"
+                        class="sidebar-link {{ request()->is('alumni') ? 'active' : '' }}" aria-expanded="false">
                         <span>
                             <i class="fa-solid fa-graduation-cap"></i>
                         </span>
                         <span class="hide-menu">Alumni</span>
                     </a>
                 </li>
-
             </ul>
         </div>
     </nav>
