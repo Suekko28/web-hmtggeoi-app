@@ -11,7 +11,7 @@ class AlumniHMTGController extends Controller
 {
     public function index()
     {
-        $data = AlumniHMTG::orderBy('id', 'desc')->paginate(10);
+        $data = AlumniHMTG::orderBy('id', 'desc')->get();
 
         return view('admin-alumni.index', [
             'data' => $data,

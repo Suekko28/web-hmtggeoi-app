@@ -12,7 +12,7 @@ class OrienteeringNasionalController extends Controller
 {
     public function index()
     {
-        $data = OrienteeringNasional::orderBy('id', 'desc')->paginate(10);
+        $data = OrienteeringNasional::orderBy('id', 'desc')->get();
 
         return view('admin-orienteering.index', [
             'data' => $data,

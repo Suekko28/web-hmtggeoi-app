@@ -44,7 +44,7 @@
                 <span class="hide-menu">Program Kerja</span>
             </a>
             <ul aria-expanded="false"
-                class="collapse first-level {{ request()->is('p-pam', '') ? 'in' : '' }}">
+                class="collapse first-level {{ request()->is('p-pam', 'orienteering-nasional', 'geoi-fair', 'hut-hmtg', '') ? 'in' : '' }}">
                 <li class="sidebar-item">
                     <a href="{{ route('p-pam.index') }}"
                         class="sidebar-link {{ request()->is('p-pam') ? 'active' : '' }}" aria-expanded="false">

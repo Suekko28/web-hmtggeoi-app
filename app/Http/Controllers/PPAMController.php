@@ -15,7 +15,7 @@ class PPAMController extends Controller
      */
     public function index()
     {
-        $data = PPAM::orderBy('id', 'desc')->paginate(10);
+        $data = PPAM::orderBy('id', 'desc')->get();
 
         return view('admin-p-pam.index', [
             'data' => $data,

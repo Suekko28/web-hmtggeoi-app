@@ -2,21 +2,22 @@
         <section id="programKerja">
             <div class="container mx-auto sm:mt-32 px-32 sm:px-6 lg:px-16 xl:px-32">
                 <div class="title">
-                    <h1 class="text-orange-primary font-extrabold text-4xl text-center antialiased" data-aos="fade-up" data-aos-easing="ease-out-in">Program Kerja</h1>
+                    <h1 class="text-orange-primary font-extrabold text-4xl text-center antialiased" data-aos="fade-up"
+                        data-aos-easing="ease-out-in">Program Kerja</h1>
                 </div>
 
-                <div class="flex lg:flex-nowrap sm:flex-wrap justify-center items-center gap-6 mt-12 content" data-aos="fade-right" data-aos-easing="ease-out-in">
+                <div class="flex lg:flex-nowrap sm:flex-wrap justify-center items-stretch gap-6 mt-12 content"
+                    data-aos="fade-right" data-aos-easing="ease-out-in">
                     <div
-                        class="p-6 bg-white border border-gray-200 shadow-lg w-full rounded-xl transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl h-fit">
-                        <img src="{{ asset('/images/icon-mine.png') }}" alt="" class="mb-2 w-32 h-32">
+                        class="p-6 bg-white border border-gray-200 shadow-lg w-full rounded-xl transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl h-full flex flex-col">
+                        <img src="{{ asset('/images/logo-hmtggeoi.png') }}" alt="" class="mb-2 w-32 h-32">
                         <h1 class=" font-bold text-2xl mb-2">P-PAM</h1>
-                        <p class="text-gray-700 mb-4">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero fugit minima cumque nobis
-                            aliquid
-                            doloribus omnis soluta, at praesentium molestias natus dolore perspiciatis deserunt nisi
-                            totam
-                            maiores
-                            sequi eligendi incidunt?
+                        <p class="text-gray-700 mb-4 flex-grow leading-7">
+                            Program Pembinaan Anggota Muda (P-PAM) ini merupakan program dalam mempersiapkan Anggota
+                            Muda untuk
+                            menambah bekal pengenalan lapangan dan bagaimana cara berorganisasi, sehingga
+                            mampu memberikan gambaran dasar mengenai kondisi lapangan, mampu menerapkan
+                            ilmu dan teori dasar geologi, serta memahami segala aspek dalam berorganisasi nantinya.
                         </p>
                         <a href="{{ route('program-kerja.p-pam.index') }}"
                             class="inline-flex items-center py-2 transition duration-300 ease-in-out transform hover:underline hover:text-orange-primary ">
@@ -30,10 +31,11 @@
                     </div>
 
                     <div
-                        class="p-6 bg-white border border-gray-200 shadow-lg w-full rounded-xl transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl h-fit">
-                        <img src="{{ asset('/images/icon-compass.png') }}" alt="" class="mb-2 w-32 h-32">
+                        class="p-6 bg-white border border-gray-200 shadow-lg w-full rounded-xl transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl h-full flex flex-col">
+                        <img src="{{ asset('/images/geoi-fair.png') }}" alt="" class="mb-2 w-32 h-32">
                         <h1 class=" font-bold text-2xl mb-2">Orienteering Nasional</h1>
-                        <p class="text-gray-700 mb-4 leading-7">Orienteering di Indonesia mulai dikenal pada 1980-an
+                        <p class="text-gray-700 mb-4 flex-grow leading-7">Orienteering di Indonesia mulai dikenal pada
+                            1980-an
                             sebagai kegiatan yang mengasah keterampilan navigasi menggunakan peta dan kompas. Pada tahun
                             2001, terbentuk Federasi Orienteering Nasional Indonesia (FONI) yang menjadi wadah resmi
                             pengembangan olahraga ini. Orienteering terus berkembang dan berpotensi mengharumkan nama
@@ -50,12 +52,14 @@
 
                     </div>
                 </div>
-                <div class="flex lg:flex-nowrap sm:flex-wrap justify-center items-center gap-6 mt-6 content" data-aos="fade-left" data-aos-easing="ease-out-in">
+                <div class="flex lg:flex-nowrap sm:flex-wrap justify-center items-center gap-6 mt-6 content"
+                    data-aos="fade-left" data-aos-easing="ease-out-in">
                     <div
-                        class="p-6 bg-white border border-gray-200 shadow-lg w-full rounded-xl transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl h-fit">
+                        class="p-6 bg-white border border-gray-200 shadow-lg w-full rounded-xl transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl h-full flex flex-col">
                         <img src="{{ asset('/images/geoi-fair.png') }}" alt="" class="mb-2 w-32 h-32">
                         <h1 class=" font-bold text-2xl mb-2">GEOI Fair</h1>
-                        <p class="text-gray-700 mb-4 leading-7">GEOI Fair merupakan ajang edukasi dan pameran yang
+                        <p class="text-gray-700 mb-4 flex-grow leading-7">GEOI Fair merupakan ajang edukasi dan pameran
+                            yang
                             bertujuan untuk
                             memperkenalkan
                             berbagai aspek geologi kepada masyarakat umum. Kegiatan ini mencakup seminar, pameran
@@ -73,16 +77,15 @@
                         </a>
                     </div>
                     <div
-                        class="p-6 bg-white border border-gray-200 shadow-lg w-full rounded-xl transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl h-fit">
+                        class="p-6 bg-white border border-gray-200 shadow-lg w-full rounded-xl transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl h-full flex flex-col">
                         <img src="{{ asset('/images/icon-celebration.png') }}" alt="" class="mb-2 w-32 h-32">
                         <h1 class=" font-bold text-2xl mb-2">HUT HMTG "GEOI"</h1>
-                        <p class="text-gray-700 mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi
-                            nostrum
-                            atque
-                            voluptate cumque velit nulla
-                            a placeat? Laboriosam, esse sunt nisi, quas fugiat eveniet dolores molestias facere atque
-                            voluptatem
-                            mollitia?</p>
+                        <p class="text-gray-700 mb-4 flex-grow leading-7">HUT HMTG "GEOI" merupakan perayaan ulang tahun
+                            Himpunan Mahasiswa Teknik Geologi Universitas Pakuan yang menjadi momen
+                            refleksi, apresiasi, dan kebersamaan seluruh anggota, alumni, serta civitas akademika.
+                            Kegiatan ini diisi dengan berbagai rangkaian acara seperti malam keakraban, seminar,
+                            perlombaan, dan kegiatan sosial yang bertujuan mempererat solidaritas serta membangun
+                            semangat kekeluargaan dalam himpunan.</p>
                         <a href="{{ route('program-kerja.hut.index') }}"
                             class="inline-flex items-center py-2 transition duration-300 ease-in-out transform hover:underline hover:text-orange-primary ">
                             Lihat Selengkapnya

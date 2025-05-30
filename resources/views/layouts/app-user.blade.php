@@ -21,7 +21,7 @@
     <link rel="shortcut icon" type="image/svg+xml" href="{{ asset('images/logo-hmtggeoi.png') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@9.0.3"></script>
     <style>
         /* CSS untuk efek fade-out loader */
         #loader {

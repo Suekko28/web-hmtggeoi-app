@@ -31,6 +31,7 @@ Route::get('/alumni-hmtg', function () {
 });
 
 
+
 Route::get('/program-kerja/p-pam', [UserPPAMController::class, 'index'])->name('program-kerja.p-pam.index');
 Route::get('/program-kerja/p-pam/{slug}', [UserPPAMController::class, 'show'])->name('program-kerja.p-pam.show');
 

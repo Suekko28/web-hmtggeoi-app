@@ -9,7 +9,7 @@ class UserAlumniController extends Controller
 {
     public function index()
     {
-        $data = AlumniHMTG::orderBy('id', 'desc')->paginate(50);
+        $data = AlumniHMTG::orderBy('id', 'desc')->get();
 
         return view('user-alumni.index', [
             'data' => $data,

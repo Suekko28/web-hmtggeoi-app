@@ -2,28 +2,23 @@
 
 @section('title', 'Admin')
 
+@section('css')
+    <link rel="stylesheet" href="{{ URL::asset('build/libs/datatables.net-bs5/css/dataTables.bootstrap5.min.css') }}">
+@endsection
+
 @section('pageContent')
 
     @include('layouts.breadcrumb', ['title' => 'Alumni', 'subtitle' => 'Dashboard'])
-    <div class="card w-100 position-relative overflow-hidden">
-        {{-- <div class="px-4 py-3 border-bottom">
-            <h4 class="card-title mb-0">Basic Table</h4>
-        </div> --}}
+    <div class="card">
         <div class="card-body">
             <button type="button" class="btn btn-primary mb-3" id="btnAlumni" data-bs-toggle="modal"
                 data-bs-target="#modalAlumni">
                 + Tambah Alumni
-            </button> @include('layouts.message')
-            <div class="search">
-                <div class="mb-3">
-                    <input type="text" id="searchInput" class="form-control" placeholder="Cari...">
-                </div>
-                <div id="noDataMessage" class="alert alert-warning" style="display: none;">
-                    Data tidak ditemukan.
-                </div>
-            </div>
-            <div class="table-responsive mb-4 border rounded-1">
-                <table class="table text-nowrap mb-0 align-middle">
+            </button>
+            <hr>
+            @include('layouts.message')
+            <div class="table-responsive overflow-y-hidden p-3">
+                <table class="table text-nowrap mb-0 align-middle" id="zero_config">
                     <thead>
                         <tr class="text-nowrap text-center">
                             <th>No</th>
@@ -39,10 +34,10 @@
                         @foreach ($data as $item)
                             <tr class="text-center">
                                 <td scope="row">{{ $loop->iteration }}</td>
-                                <td scope="row">{{$item->name}}</td>
-                                <td scope="row">{{$item->npm}}</td>
-                                <td scope="row">{{$item->phone}}</td>
-                                <td scope="row">{{$item->year}}</td>
+                                <td scope="row">{{ $item->name }}</td>
+                                <td scope="row">{{ $item->npm }}</td>
+                                <td scope="row">{{ $item->phone }}</td>
+                                <td scope="row">{{ $item->year }}</td>
                                 <td>
                                     {{ \Carbon\Carbon::parse($item->created_at)->format('d-m-Y h:i A') }}
 
@@ -61,7 +56,6 @@
                     </tbody>
                 </table>
             </div>
-            <div class="p-2">{{ $data->links() }}</div>
         </div>
     </div>
 
@@ -79,19 +73,23 @@
                         <input type="hidden" name="id" id="undanganId">
                         <div class="form-group mb-2">
                             <label for="name">Nama Alumni<span class="mandatory">*</span></label>
-                            <input type="text" name="name" id="name" class="form-control" placeholder="Masukkan nama alumni" required>
+                            <input type="text" name="name" id="name" class="form-control"
+                                placeholder="Masukkan nama alumni" required>
                         </div>
                         <div class="form-group mb-2">
                             <label for="npm">NPM<span class="mandatory">*</span></label>
-                            <input type="number" name="npm" id="npm" class="form-control" placeholder="Masukkan NPM" required>
+                            <input type="number" name="npm" id="npm" class="form-control"
+                                placeholder="Masukkan NPM" required>
                         </div>
                         <div class="form-group mb-2">
                             <label for="phone">No Telepon<span class="mandatory">*</span></label>
-                            <input type="number" name="phone" id="phone" class="form-control" placeholder="Masukkan no telepon" required>
+                            <input type="number" name="phone" id="phone" class="form-control"
+                                placeholder="Masukkan no telepon" required>
                         </div>
                         <div class="form-group">
                             <label for="year">Tahun <span class="mandatory">*</span></label>
-                            <input type="number" name="year" id="year" class="form-control" placeholder="Masukkan tahun" required>
+                            <input type="number" name="year" id="year" class="form-control"
+                                placeholder="Masukkan tahun" required>
                         </div>
                     </form>
                 </div>
@@ -178,30 +176,11 @@
                 });
             });
         });
-
-        // Search functionality
-        const searchInput = document.getElementById('searchInput');
-        const tableRows = document.querySelectorAll('.table tbody tr');
-        const noDataMessage = document.getElementById('noDataMessage');
-
-        searchInput.addEventListener('input', function() {
-            const searchText = this.value.toLowerCase();
-            let found = false;
-
-            tableRows.forEach(function(row) {
-                const rowData = row.innerText.toLowerCase();
-                if (rowData.includes(searchText)) {
-                    row.style.display = '';
-                    found = true;
-                } else {
-                    row.style.display = 'none';
-                }
-            });
-
-            noDataMessage.style.display = found ? 'none' : 'block';
-        });
     </script>
 @endsection
 
 @section('scripts')
+    <script src="{{ URL::asset('build/js/vendor.min.js') }}"></script>
+    <script src="{{ URL::asset('build/libs/datatables.net/js/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ URL::asset('build/js/datatable/datatable-basic.init.js') }}"></script>
 @endsection

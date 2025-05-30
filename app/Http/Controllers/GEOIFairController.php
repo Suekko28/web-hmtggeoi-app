@@ -12,7 +12,7 @@ class GEOIFairController extends Controller
 {
     public function index()
     {
-        $data = GEOIFair::orderBy('id', 'desc')->paginate(10);
+        $data = GEOIFair::orderBy('id', 'desc')->get();
 
         return view('admin-geoi.index', [
             'data' => $data,

@@ -12,7 +12,7 @@ class HutHMTGController extends Controller
 {
     public function index()
     {
-        $data = HutHMTG::orderBy('id', 'desc')->paginate(10);
+        $data = HutHMTG::orderBy('id', 'desc')->get();
 
         return view('admin-hut.index', [
             'data' => $data,
