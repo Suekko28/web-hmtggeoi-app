@@ -11,10 +11,19 @@
     @include('layouts.breadcrumb', ['title' => 'Alumni', 'subtitle' => 'Dashboard'])
     <div class="card">
         <div class="card-body">
-            <button type="button" class="btn btn-primary mb-3" id="btnAlumni" data-bs-toggle="modal"
-                data-bs-target="#modalAlumni">
-                + Tambah Alumni
-            </button>
+            <div class="d-flex gap-2">
+                <button type="button" class="btn btn-primary mb-3" id="btnAlumni" data-bs-toggle="modal"
+                    data-bs-target="#modalAlumni">
+                    + Tambah Alumni
+                </button>
+                <button type="button" class="btn btn-warning mb-3" id="btnImportAlumni" data-bs-toggle="modal"
+                    data-bs-target="#modalImportAlumni">
+                    Import
+                </button>
+                <a href="{{ route('alumni-export') }}" class="btn btn-danger mb-3">
+                    Export
+                </a>
+            </div>
             <hr>
             @include('layouts.message')
             <div class="table-responsive overflow-y-hidden p-3">
@@ -44,9 +53,12 @@
                                 </td>
                                 <td>
                                     <div class="btn-group-horizontal">
-                                        <a href="{{ route('alumni.edit', $item->id) }}"
-                                            class="btn btn-warning mb-2 rounded"><i class="fa fa-pen-to-square"
-                                                style="color:white;"></i></a>
+                                        <a href="javascript:void(0)" class="btn btn-warning mb-2 rounded edit-btn"
+                                            data-id="{{ $item->id }}" data-name="{{ $item->name }}"
+                                            data-npm="{{ $item->npm }}" data-phone="{{ $item->phone }}"
+                                            data-year="{{ $item->year }}">
+                                            <i class="fa fa-pen-to-square" style="color:white;"></i>
+                                        </a>
                                         <button class="btn btn-danger delete-btn rounded mb-2"
                                             data-id="{{ $item->id }}"><i class="fa fa-trash"></i></button>
                                     </div>
@@ -70,7 +82,7 @@
                 <div class="modal-body">
                     <form id="formAlumni" action="{{ route('alumni.store') }}" method="POST">
                         @csrf
-                        <input type="hidden" name="id" id="undanganId">
+                        <input type="hidden" name="id" id="alumniId">
                         <div class="form-group mb-2">
                             <label for="name">Nama Alumni<span class="mandatory">*</span></label>
                             <input type="text" name="name" id="name" class="form-control"
@@ -101,6 +113,35 @@
         </div>
     </div>
 
+    <!-- Modal Import -->
+    <div class="modal fade" id="modalImportAlumni" tabindex="-1" aria-labelledby="modalImportAlumniLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title" id="modalImportAlumniLabel">Import</h6>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="formImportAlumni" action="{{ route('alumni-import') }}" method="POST"
+                        enctype="multipart/form-data">
+                        @csrf
+                        <div class="form-group mb-2">
+                            <label for="file">File<span class="mandatory">*</span></label>
+                            <input type="file" name="file" id="file" class="form-control"
+                                placeholder="Masukkan nama Import Alumni" required>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                    <button type="submit" class="btn btn-primary" form="formImportAlumni">Import</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
     <!-- Hidden form for delete -->
     <form id="deleteForm" method="POST" style="display:none;">
@@ -116,26 +157,30 @@
             document.getElementById('formAlumni').action = "{{ route('alumni.store') }}";
 
             // Ubah title modal jadi "Buat Undangan Baru"
-            document.getElementById('modalAlumniLabel').textContent = 'Buat Undangan Baru';
+            document.getElementById('modalAlumniLabel').textContent = 'Buat Alumni Baru';
         });
 
         // Event listener untuk tombol edit
         document.querySelectorAll('.edit-btn').forEach(function(button) {
             button.addEventListener('click', function(event) {
                 var id = this.getAttribute('data-id');
-                var name = this.getAttribute('data-nama-pasangan');
-                var tgl_pernikahan = this.getAttribute('data-tgl-pernikahan');
+                var name = this.getAttribute('data-name');
+                var npm = this.getAttribute('data-npm');
+                var phone = this.getAttribute('data-phone');
+                var year = this.getAttribute('data-year');
 
                 // Set form action untuk update
                 document.getElementById('formAlumni').action = '/alumni/' + id + '/update';
 
                 // Isi form dengan data dari tombol edit
-                document.getElementById('undanganId').value = id;
+                document.getElementById('alumniId').value = id;
                 document.getElementById('name').value = name;
-                document.getElementById('tgl_pernikahan').value = tgl_pernikahan;
+                document.getElementById('npm').value = npm;
+                document.getElementById('phone').value = phone;
+                document.getElementById('year').value = year;
 
                 // Ubah title modal jadi "Edit Undangan"
-                document.getElementById('modalAlumniLabel').textContent = 'Edit Undangan';
+                document.getElementById('modalAlumniLabel').textContent = 'Edit Alumni';
 
                 // Buka modal
                 var modal = new bootstrap.Modal(document.getElementById('modalAlumni'));

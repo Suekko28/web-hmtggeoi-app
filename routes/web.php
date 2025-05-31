@@ -69,7 +69,9 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('/hut-hmtg', HutHMTGController::class);
     Route::post('/upload/hut-hmtg', [HutHMTGController::class, 'upload'])->name('ckeditor.upload.hut');
 
+    Route::get('/alumni/export', [AlumniHMTGController::class, 'alumniExport'])->name('alumni-export');
     Route::resource('/alumni', AlumniHMTGController::class);
-
-
+    Route::post('/alumni/{id}/update', [AlumniHMTGController::class, 'update']);
+    Route::post('/alumni/import', [AlumniHMTGController::class, 'alumniImport'])->name('alumni-import');
+    
 });

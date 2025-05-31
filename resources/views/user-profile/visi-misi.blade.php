@@ -4,8 +4,8 @@
             <!-- VISI -->
             <div class="flex sm:flex-wrap lg:flex-nowrap gap-12 mt-12 content">
                 <div class="w-full">
-                    <img src="{{ asset('/images/visual-1.png') }}" alt=""
-                        class="w-full object-cover h-full rounded-xl">
+                    <img src="{{ asset('/images/visual-5.jpg') }}" alt=""
+                        class="w-full object-cover h-[320px] rounded-xl">
                 </div>
                 <div class="w-full">
                     <h1 class="font-bold text-3xl mb-3 text-orange-primary"><i class="fa-solid fa-quote-left"></i> Visi
@@ -20,8 +20,8 @@
             <!-- MISI -->
             <div class="flex flex-row-reverse lg:flex-nowrap sm:flex-wrap gap-12 mt-12 content">
                 <div class="w-full">
-                    <img src="{{ asset('/images/visual-1.png') }}" alt=""
-                        class="w-full object-cover h-full rounded-xl">
+                    <img src="{{ asset('/images/visual-8.jpg') }}" alt=""
+                        class="w-full object-cover h-[320px] rounded-xl">
                 </div>
                 <div class="w-full">
                     <h1 class="font-bold text-3xl mb-3 text-orange-primary"><i class="fa-solid fa-quote-left"></i> Misi

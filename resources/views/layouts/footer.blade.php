@@ -8,10 +8,11 @@
                     <div class="flex text-white hidden sm:block md:text-center w-full space-y-3">
                         <span class="text-2xl font-bold whitespace-nowrap">HMTGGEOI</span>
                         <h6 class="font-bold">Himpunan Mahasiswa Teknik Geologi</h6>
-                        <p class="font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut expedita
-                            atque vel mollitia
-                            placeat in animi dolore excepturi, dolores ipsam, molestiae quisquam! Iusto magni eius
-                            reiciendis incidunt explicabo, iste nisi.</p>
+                        <p class="font-light">Program ini bertekad untuk turut serta dalam mencerdaskan kehidupan bangsa
+                            dan membangun insan pendidik profesional yang unggul mandiri dan berkarakter. Program Studi
+                            Teknik Geologi berperan dalam menciptakan guru profesional yang menguasai dan mampu
+                            mengimplementasikan kompetensi profesional, kepribadian dan sosial sehingga mampu bersaing
+                            dalam menghadapi berbagai tantangan pendidikan yang terus berkembang.</p>
                     </div>
                 </div>
             </div>
@@ -20,13 +21,13 @@
                     <h2 class="mb-6 text-sm font-semibold uppercase text-orange-primary">Beranda</h2>
                     <ul class="text-white dark:text-gray-400 font-medium">
                         <li class="mb-4">
-                            <a href="https://flowbite.com/" class="hover:underline">Home</a>
+                            <a href="/" class="hover:underline">Home</a>
                         </li>
                         <li class="mb-4">
-                            <a href="https://tailwindcss.com/" class="hover:underline">Profile</a>
+                            <a href="/profile" class="hover:underline">Profile</a>
                         </li>
                         <li class="mb-4">
-                            <a href="https://tailwindcss.com/" class="hover:underline">Alumni</a>
+                            <a href="{{ route('alumni-hmtg.index') }}" class="hover:underline">Alumni</a>
                         </li>
                     </ul>
                 </div>
@@ -35,16 +36,17 @@
                     </h2>
                     <ul class="text-white dark:text-gray-400 font-medium">
                         <li class="mb-4">
-                            <a href="https://flowbite.com/" class="hover:underline">P-PAM</a>
+                            <a href="{{ route('program-kerja.p-pam.index') }}" class="hover:underline">P-PAM</a>
                         </li>
                         <li class="mb-4">
-                            <a href="https://flowbite.com/" class="hover:underline">Orienteering Nasional</a>
+                            <a href="{{ route('program-kerja.orienteering.index') }}"
+                                class="hover:underline">Orienteering Nasional</a>
                         </li>
                         <li class="mb-4">
-                            <a href="https://flowbite.com/" class="hover:underline">GEOI Fair</a>
+                            <a href="{{ route('program-kerja.geoi.index') }}" class="hover:underline">GEOI Fair</a>
                         </li>
                         <li class="mb-4">
-                            <a href="https://flowbite.com/" class="hover:underline">HUT HMTG "GEOI"</a>
+                            <a href="{{ route('program-kerja.hut.index') }}" class="hover:underline">HUT HMTG "GEOI"</a>
                         </li>
                     </ul>
                 </div>
