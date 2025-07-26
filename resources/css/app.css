@@ -215,4 +215,9 @@ hr {
         top: 25%;
         left: 50%;
     }
+
+    .content_header {
+        margin-top: 64px;
+        gap: 12px;
+    }
 }

@@ -45,10 +45,10 @@
     <section id="userPPAM">
         <div class="container mx-auto mt-32 px-32 sm:px-6 lg:px-16 xl:px-32">
             <!-- Header -->
-            <div class="flex flex-wrap justify-between items-center mb-12">
+            <div class="flex flex-wrap justify-between items-center mb-12 content_header">
                 <h1 class="text-orange-primary text-3xl font-extrabold">GEOI Fair</h1>
                 <div class="search-bar">
-                    <div class="relative lg:w-1/2 w-full mx-auto">
+                    <div class="relative w-full mx-auto">
                         <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
                             <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">

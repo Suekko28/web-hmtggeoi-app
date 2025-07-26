@@ -56,7 +56,7 @@
                 </a>
             </div>
             <div class="item">
-                <a href="">
+                <a href="{{ route('hut-hmtg.index') }}">
                     <div class="card border-0 zoom-in bg-danger-subtle shadow-none">
                         <div class="card-body">
                             <div class="text-center">
@@ -75,7 +75,7 @@
         <h3 class="title">Alumni</h3>
         <div class="flex lg:flex-nowrap sm:flex-wrap justify-center gap-6 content">
             <div class="item">
-                <a href="">
+                <a href="{{ route('alumni.index') }}">
                     <div class="card border-0 zoom-in bg-secondary-subtle shadow-none">
                         <div class="card-body">
                             <div class="text-center">
