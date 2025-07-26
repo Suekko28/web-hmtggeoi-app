@@ -8,7 +8,7 @@
 <body class="link-sidebar">
     <!-- Preloader -->
     <div class="preloader">
-        <img src="{{ URL::asset('build/images/logos/favicon.png') }}" alt="loader" class="lds-ripple img-fluid" />
+        <img src="{{ asset('/images/logo-hmtggeoi.png') }}" alt="loader" class="lds-ripple img-fluid" />
     </div>
 
     @yield('pageContent')

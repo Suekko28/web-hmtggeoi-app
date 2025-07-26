@@ -46,7 +46,7 @@
                                     <div class="col-sm-12 mb-3">
                                         <label for="description">Deskripsi <span class="mandatory">*</span></label>
                                         <textarea class="form-control" rows="10" id="description" name="description"
-                                            placeholder="Masukkan isi description">{{ old('description', $data->description) }}</textarea>
+                                            placeholder="Masukkan isi deskripsi">{{ old('description', $data->description) }}</textarea>
                                     </div>
                                 </div>
                             </div>

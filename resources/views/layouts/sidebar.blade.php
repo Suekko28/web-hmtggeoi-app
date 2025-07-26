@@ -93,6 +93,19 @@
                 <span class="hide-menu">Alumni</span>
             </a>
         </li>
+        <li class="sidebar-item">
+            <a class="dropdown-item sidebar-link text-danger" href="{{ route('logout') }}"
+                onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                <span>
+                    <i class="fa-solid fa-right-from-bracket"></i> </span>
+                {{ __('Logout') }}
+            </a>
+
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                @csrf
+            </form>
+        </li>
     </ul>
 </nav>
 

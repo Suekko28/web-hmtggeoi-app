@@ -49,7 +49,9 @@ Route::get('/alumni-hmtg', [UserAlumniController::class, 'index'])->name('alumni
 
 
 
-Auth::routes();
+Auth::routes([
+    'register' => false,
+]);
 
 Route::middleware(['auth'])->group(function () {
 

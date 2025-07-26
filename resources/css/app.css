@@ -170,14 +170,28 @@ body {
     color: black !important;
 }
 
-
 #paginator {
     box-shadow: none !important;
 }
 
 /* Navbar End */
 
+/* Search Datatables Start */
 
+.datatable-input {
+    border: 1px solid #d1d5db; /* abu-abu default seperti Tailwind gray-300 */
+    padding: 0.5rem;
+    border-radius: 0.375rem; /* rounded-md */
+    outline: none;
+    transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.datatable-input:focus {
+    border-color: #f1430e; /* warna utama saat focus */
+    box-shadow: 0 0 0 3px rgba(241, 67, 14, 0.4); /* soft ring effect */
+}
+
+/* Search Datatables End */
 
 hr {
     color: var(--color-orange-300);

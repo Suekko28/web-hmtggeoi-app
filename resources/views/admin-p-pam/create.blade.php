@@ -33,13 +33,13 @@
                                             name="image" placeholder="" value="{{ old('image') }}">
                                     </div>
                                     <div class="col-sm-6 mb-3">
-                                        <label for="title">Title <span class="mandatory">*</span></label>
+                                        <label for="title">Judul <span class="mandatory">*</span></label>
                                         <input type="text" class="form-control" id="title" name="title"
-                                            placeholder="Masukkan title" value="{{ old('title') }}">
+                                            placeholder="Masukkan judul" value="{{ old('title') }}">
                                     </div>
                                     <div class="col-sm-12 mb-3">
                                         <label for="description">Deskripsi <span class="mandatory">*</span></label>
-                                        <textarea class="form-control" rows="10" id="description" name="description" placeholder="Masukkan isi description">{{ old('description') }}</textarea>
+                                        <textarea class="form-control" rows="10" id="description" name="description" placeholder="Masukkan isi deskripsi">{{ old('description') }}</textarea>
                                     </div>
                                 </div>
                             </div>
