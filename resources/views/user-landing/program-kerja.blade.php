@@ -78,7 +78,7 @@
                     </div>
                     <div
                         class="p-6 bg-white border border-gray-200 shadow-lg w-full rounded-xl transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl h-full flex flex-col">
-                        <img src="{{ asset('/images/icon-celebration.png') }}" alt="" class="mb-2 w-32 h-32">
+                        <img src="{{ asset('/images/hut-hmtggeoi.jpg') }}" alt="" class="mb-2 w-32 h-32">
                         <h1 class=" font-bold text-2xl mb-2">HUT HMTG "GEOI"</h1>
                         <p class="text-gray-700 mb-4 flex-grow leading-7">HUT HMTG "GEOI" merupakan perayaan ulang tahun
                             Himpunan Mahasiswa Teknik Geologi Universitas Pakuan yang menjadi momen

@@ -75,7 +75,7 @@
                                         src="{{ asset('/images/logo-email.png') }}" alt="Email">
                                 </a>
                             </li>
-                            <li class="sm:block hidden">
+                            <li class="lg:block hidden">
                                 <a href="mailto:hmtggeoi@gmail.com" class="hover:underline">hmtggeoi@gmail.com</a>
                             </li>
                         </div>
@@ -85,18 +85,18 @@
                     <h2 class="mb-6 text-sm font-semibold text-orange-primary uppercase dark:text-white">Lokasi</h2>
                     <ul class="text-white dark:text-gray-400 font-medium mb-4">
                         <li class="mb-4">
-                            <a href="https://g.co/kgs/wy4qLEh" target="_blank" class="hover:underline">
-                                Kampus Universitas Padjadjaran, Jatinangor
+                            <a href="https://maps.app.goo.gl/xAhyRQVsX8zpJryU9" target="_blank" class="hover:underline">
+                                Universitas Pakuan Bogor
                             </a>
                         </li>
                     </ul>
                     <div class="rounded-lg overflow-hidden">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63346.65536628212!2d107.7292411!3d-6.933933099999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e8abdd3e3cd5%3A0x88836a7201a54b18!2sUniversitas%20Padjadjaran!5e0!3m2!1sen!2sid!4v1715520375885!5m2!1sen!2sid"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.381673983951!2d106.80979187499358!3d-6.599398393394423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c5d97d3764c3%3A0xd56ba6305181755c!2sUniversitas%20Pakuan!5e0!3m2!1sid!2sid!4v1755871308612!5m2!1sid!2sid"
                             width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-                </div>
+                </div>  
                 {{-- <div>
                     <h2 class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Follow us</h2>
                     <ul class="text-white dark:text-gray-400 font-medium">

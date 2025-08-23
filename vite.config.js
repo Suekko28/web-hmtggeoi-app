@@ -11,9 +11,6 @@ const folder = {
 };
 
 export default defineConfig({
-    css: {
-        postcss,
-    },
     build: {
         manifest: true,
         rtl: true,
