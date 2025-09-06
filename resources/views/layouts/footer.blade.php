@@ -67,19 +67,18 @@
                 </div>
                 <div>
                     <h2 class="mb-6 text-sm font-semibold uppercase text-orange-primary">Contact</h2>
-                    <ul class="text-white font-medium">
-                        <div class="flex flex-row gap-2">
-                            <li>
-                                <a href="mailto:hmtggeoi@gmail.com">
-                                    <img class="w-6 h-6 object-contain sm:inline"
-                                        src="{{ asset('/images/logo-email.png') }}" alt="Email">
-                                </a>
-                            </li>
-                            <li class="lg:block hidden">
-                                <a href="mailto:hmtggeoi@gmail.com" class="hover:underline">hmtggeoi@gmail.com</a>
-                            </li>
-                        </div>
+                    <ul class="flex flex-row gap-2 text-white font-medium items-center">
+                        <li>
+                            <a href="mailto:hmtggeoi@gmail.com">
+                                <img class="w-6 h-6 min-w-[1.5rem] min-h-[1.5rem] object-contain"
+                                    src="{{ asset('/images/logo-email.png') }}" alt="Email">
+                            </a>
+                        </li>
+                        <li class="hidden xl:block">
+                            <a href="mailto:hmtggeoi@gmail.com" class="hover:underline">hmtggeoi@gmail.com</a>
+                        </li>
                     </ul>
+
                 </div>
                 <div>
                     <h2 class="mb-6 text-sm font-semibold text-orange-primary uppercase dark:text-white">Lokasi</h2>
@@ -96,7 +95,7 @@
                             width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-                </div>  
+                </div>
                 {{-- <div>
                     <h2 class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Follow us</h2>
                     <ul class="text-white dark:text-gray-400 font-medium">
